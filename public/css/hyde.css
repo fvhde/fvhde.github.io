@@ -73,6 +73,12 @@ html {
 /* Sidebar links */
 .sidebar a {
   color: #fff;
+  font-size: 15px !important;
+}
+
+/* Sidebar paragraphs */
+.sidebar p {
+  font-size: 15px !important;
 }
 
 /* About section */
