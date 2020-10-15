@@ -76,7 +76,7 @@ html {
 }
 
 .sidebar a:hover {
-  color: #ff5a5a;
+  color: #ff5a5a !important;
 }
 
 /* About section */
