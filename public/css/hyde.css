@@ -126,6 +126,7 @@ a.sidebar-nav-item:focus {
 .social-link {
   height: 23px;
   width: 23px;
+  margin-left:7px;
   display: block
 }
 
