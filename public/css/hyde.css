@@ -124,8 +124,11 @@ a.sidebar-nav-item:focus {
 }
 
 .social-table {
-  display: inline;
   list-style: none;
+}
+
+.social-table li {
+  display: inline;
 }
 
 .social-link {
