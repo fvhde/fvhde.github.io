@@ -123,10 +123,14 @@ a.sidebar-nav-item:focus {
   }
 }
 
+.social-table {
+  display: inline;
+  list-style: none;
+}
+
 .social-link {
   height: 23px;
   width: 23px;
-  display: block
 }
 
 
