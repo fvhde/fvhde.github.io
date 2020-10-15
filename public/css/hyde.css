@@ -131,6 +131,10 @@ a.sidebar-nav-item:focus {
   display: inline;
 }
 
+.social-list a {
+  color: white;
+}
+
 .social-link {
   height: 23px;
   width: 23px;
