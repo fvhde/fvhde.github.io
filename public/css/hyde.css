@@ -128,7 +128,7 @@ a.sidebar-nav-item:focus {
 }
 
 .social-list li {
-  display: inline;
+  display: inline !important;
 }
 
 .social-link {
