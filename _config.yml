@@ -11,6 +11,7 @@ tagline:          'Just another hacking blog'
 description:      '<span style="color:white">Alessandro Grisa</span><br/>Cyber Security Enthusiast'
 url:              zer0phat.github.io
 baseurl:          /
+images:           _public/images/
 
 author:
   name:           'Alessandro Grisa'
