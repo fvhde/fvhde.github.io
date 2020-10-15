@@ -187,7 +187,7 @@ a.sidebar-nav-item:focus {
 
 /* Red */
 .theme-base-08 .sidebar {
-  background-color: #ac4142;
+  background-color: #0d1a26; /* #ac4142; */
 }
 .theme-base-08 .content a,
 .theme-base-08 .related-posts li a:hover {
