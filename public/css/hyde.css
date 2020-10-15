@@ -123,11 +123,11 @@ a.sidebar-nav-item:focus {
   }
 }
 
-.social-table {
+.social-list {
   list-style: none;
 }
 
-.social-table li {
+.social-list li {
   display: inline;
 }
 
