@@ -137,6 +137,10 @@ a.sidebar-nav-item:focus {
   color: white;
 }
 
+.social-list i:hover {
+  opacity: 0.8;
+}
+
 .social-link {
   height: 23px;
   width: 23px;
