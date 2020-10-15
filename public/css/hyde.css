@@ -75,7 +75,7 @@ html {
   color: #fff;
 }
 
-.sidebar a:focus {
+.sidebar a:hover {
   color: #ff5a5a;
 }
 
