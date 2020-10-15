@@ -1,17 +1,17 @@
-<div align="center" class="sidebar">
+<div class="sidebar">
   <div class="container sidebar-sticky">
-    <div class="sidebar-about">
+    <div align="center" class="sidebar-about">
       <h3>
         <a href="{{ site.baseurl }}">
           {{ site.title }}
         </a>
       </h1>
       <p class="lead">{{ site.description }}</p>
-      <a class="sidebar-nav-item" href="/about">About</a>
+      <span><a href="/about">About</a></span>
       <span>&bull;</span>
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+      <span><a href="{{ site.github.repo }}">GitHub project</a></span>
     </div>
 
-    <p style="font-size:10px">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    <p align="center" style="font-size:13px">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>
