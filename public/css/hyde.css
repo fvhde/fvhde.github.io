@@ -126,13 +126,9 @@ a.sidebar-nav-item:focus {
 .social-link {
   height: 23px;
   width: 23px;
-  float: left;
+  display: block
 }
 
-.social-link-last {
-  height: 23px;
-  width: 23px;
-}
 
 /* Container
  *
