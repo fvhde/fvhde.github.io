@@ -126,6 +126,7 @@ a.sidebar-nav-item:focus {
 .social-list {
   margin-left: -15px;
   list-style: none;
+  padding: 0;
 }
 
 .social-list li {
