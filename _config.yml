@@ -1,9 +1,6 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
-
-# Permalinks
-permalink:        pretty
+markdown:         kramdown
+highlighter:      rouge
 
 # Setup
 title:            0-PHAT
