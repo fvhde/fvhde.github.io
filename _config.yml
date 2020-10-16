@@ -10,8 +10,6 @@ url:              zer0phat.github.io
 baseurl:          /
 images:           /public/images
 
-previews:         /_previews/
-
 author:
   name:           'Alessandro Grisa'
   url:            https://twitter.com/zer0phat

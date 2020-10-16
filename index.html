@@ -4,17 +4,17 @@ title: Home
 ---
 
 <div class="posts">
-  {% for preview in '/_previews/' %}
+  {% for post in posts %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ preview.url }}">
-        {{ preview.title }}
+      <a href="{{ post.url }}">
+        {{ post.title }}
       </a>
     </h1>
 
-    <span class="post-date">{{ preview.date | date_to_string }}</span>
+    <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ preview.content }}
+    {{ post.content }}
   </div>
   {% endfor %}
 </div>
