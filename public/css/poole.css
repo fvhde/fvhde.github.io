@@ -436,10 +436,14 @@ tbody tr:nth-child(odd) th {
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: 1px solid #eee;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
+}
+
+.paginagtion-page-num {
+  display: block;
+  padding: 1rem;
 }
 
 /* Only provide a hover state for linked pagination items */
