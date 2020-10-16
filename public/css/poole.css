@@ -346,6 +346,29 @@ tbody tr:nth-child(odd) th {
 
 .page-title:hover {
   color: #ff5a5a;
+  cursor: pointer;
+}
+
+.home-button {
+    border: solid 1px #ececec;
+    background-color: #fff;
+    width: 100px;
+    height: 35px;
+    display: block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 35px;
+    font-size: 13px;
+    color: #000;
+}
+
+.home-button:hover {
+  color: #fff;
+  background-color: #ff5a5a;
 }
 
 /* Meta data line below post title */
