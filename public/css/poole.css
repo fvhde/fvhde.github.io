@@ -434,7 +434,6 @@ tbody tr:nth-child(odd) th {
 
 /* Pagination items can be `span`s or `a`s */
 .pagination-item {
-  color: #0d1a26;
   padding: 1rem;
   display: inline;
   height: 40px;
@@ -443,8 +442,9 @@ tbody tr:nth-child(odd) th {
 }
 
 .pagination-item-num {
-  border-left: solid 1px #0d1a26;
-  border-right: solid 1px #0d1a26;
+  color: #268bd2 !important;
+  border-left: solid 1px #268bd2;
+  border-right: solid 1px #268bd2;
   cursor: default;
 }
 
