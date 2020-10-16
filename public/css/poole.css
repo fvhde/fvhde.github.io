@@ -435,6 +435,7 @@ tbody tr:nth-child(odd) th {
 /* Pagination items can be `span`s or `a`s */
 .pagination-item {
   padding: 1rem;
+  display: inline;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
@@ -443,6 +444,7 @@ tbody tr:nth-child(odd) th {
 .paginagtion-page-num {
   padding: 1rem;
   width: 100px;
+  display: inline;
 }
 
 /* Only provide a hover state for linked pagination items */
