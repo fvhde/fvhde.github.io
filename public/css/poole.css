@@ -471,3 +471,13 @@ a.pagination-item:hover {
     margin-left: -1px;
   }
 }
+
+@media (max-width: 30em) {
+  .pagination {
+    padding-left: 5%;
+  }
+  .pagination-item {
+    float: left;
+    width: 70px;
+  }
+}
