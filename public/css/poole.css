@@ -437,14 +437,15 @@ tbody tr:nth-child(odd) th {
   padding: 1rem;
   display: inline;
 }
-.pagination-item:first-child {
-  margin-bottom: -1px;
+
+.pagination-item-num {
+  color: #0d1a26 !important;
+  border-left: solid 1px #0d1a26;
+  border-right: solid 1px #0d1a26;
 }
 
-.paginagtion-page-num {
-  padding: 1rem;
-  width: 100px;
-  display: inline;
+.pagination-item:first-child {
+  margin-bottom: -1px;
 }
 
 /* Only provide a hover state for linked pagination items */
