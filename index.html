@@ -14,7 +14,7 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content | split:'<!--more-->' | first }}
+    {{ post.content | split:'<!--more-->' | first }} ..&nbsp;<a href="{{ post.url }}">Read More &nbsp;&rarr;</a>
   </div>
   {% endfor %}
 </div>
