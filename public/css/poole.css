@@ -359,7 +359,7 @@ tbody tr:nth-child(odd) th {
     border: solid 1px #ececec;
     background-color: #fff;
     width: 150px;
-    height: 35px;
+    height: 40px;
     display: block;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -367,7 +367,7 @@ tbody tr:nth-child(odd) th {
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    line-height: 35px;
+    line-height: 40px;
     color: #000;
 }
 
