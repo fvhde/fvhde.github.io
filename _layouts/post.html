@@ -3,9 +3,9 @@ layout: default
 ---
 
 <div class="post">
-  <a class="home-button">&larr;&nbsp;Homepage</a>
+  <a href="/" class="home-button">&larr;&nbsp;Homepage</a>
   <br/>
-  <h1 class="post-title">{{ page.title }}</h1>
+  <a href="{{ page.url }}"><h1 class="post-title">{{ page.title }}</h1></a>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
 </div>
