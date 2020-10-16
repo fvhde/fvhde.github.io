@@ -7,7 +7,7 @@ My name is **Alessandro Grisa**, alias **0-Phat**.
 As my blog description says, I'm a Infosec enthusiast, who's working as Red Teamer for two years. I am probably not the most experienced hat, but I'm trying to learn something new everyday.  
 This blog has been created to share my, hopefully interesting, posts and research.
 
-I will upload any code or project that I will share on my [Github](https://github.com/zer0phat), in order to be available to anyone.
+I will upload any code or project that I will share on my [Github page](https://github.com/zer0phat), in order to be available to anyone.
 
 Feel free to contact me using one of the following vectors:
 
