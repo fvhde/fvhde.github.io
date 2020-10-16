@@ -345,17 +345,17 @@ tbody tr:nth-child(odd) th {
 }
 
 .page-title:hover {
-  color: #ff5a5a;
+  color: #a0c0de;
   cursor: pointer;
 }
 
 .post-title:hover {
-  color: #ff5a5a;
+  color: #a0c0de;
   cursor: pointer;
 }
 
 .post-title a:hover {
-  color: #ff5a5a;
+  color: #a0c0de;
   cursor: pointer;
 }
 
@@ -379,7 +379,7 @@ tbody tr:nth-child(odd) th {
 
 .home-button:hover {
   color: #fff;
-  background-color: #ff5a5a;
+  background-color: #0d1a26;
 }
 
 /* Meta data line below post title */

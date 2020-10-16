@@ -76,7 +76,7 @@ html {
 }
 
 .sidebar a:hover {
-  color: #ff5a5a !important;
+  color: #a0c0de !important;
 }
 
 /* About section */
@@ -142,7 +142,7 @@ a.sidebar-nav-item:focus {
 }
 
 .social-list i:hover {
-  color: #ff5a5a;
+  color: #a0c0de;
 }
 
 .social-link {
