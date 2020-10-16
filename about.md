@@ -3,8 +3,8 @@ layout: page
 title: About me
 ---
 
-My name is **Alessandro Grisa**, alias **0-Phat**. 
-As my blog description says, I'm a Infosec enthusiast, who's working as Red Teamer for two years.
+My name is **Alessandro Grisa**, alias **0-Phat**.  
+As my blog description says, I'm a Infosec enthusiast, who's working as Red Teamer for two years.  
 This blog has been created to share my, hopefully interesting, posts and research.
 
 I will upload any code or project that I will share on my Github, in order to be available to anyone.
