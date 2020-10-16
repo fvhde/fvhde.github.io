@@ -479,7 +479,7 @@ a.pagination-item:focus {
 
 @media (max-width: 30em) {
   .pagination {
-    padding-left: 30%;
+    padding-left: 23%;
   }
   .pagination-item {
     float: left;
