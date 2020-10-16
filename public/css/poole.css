@@ -458,7 +458,7 @@ a.pagination-item:hover {
 
 @media (min-width: 30em) {
   .pagination {
-    margin: 30% 0;
+    padding-left: 30%;
   }
   .pagination-item {
     float: left;
