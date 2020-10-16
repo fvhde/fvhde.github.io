@@ -438,12 +438,13 @@ tbody tr:nth-child(odd) th {
   display: inline;
   height: 40px;
   line-height: 40px;
+  padding: 0;
 }
 
 .pagination-item-num {
-  color: #0d1a26 !important;
-  border-left: solid 1px #0d1a26;
-  border-right: solid 1px #0d1a26;
+  color: #268bd2 !important;
+  border-left: solid 1px #268bd2;
+  border-right: solid 1px #268bd2;
 }
 
 .pagination-item:first-child {
