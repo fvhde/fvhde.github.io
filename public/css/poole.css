@@ -478,9 +478,14 @@ a.pagination-item:focus {
 }
 
 @media (max-width: 30em) {
+  .home-button {
+    width: 100% !important;
+  }
+
   .pagination {
     padding-left: 23%;
   }
+
   .pagination-item {
     float: left;
     width: 70px;
