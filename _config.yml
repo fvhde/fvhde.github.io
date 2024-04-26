@@ -4,14 +4,14 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
+# relative_permalinks: true
 
 # Setup
 title:            Testio Tech
 tagline:          'A blog related to software testing'
 description:      'This is my personal blog related to software testing, and will include practical posts on test tools/methodlogies, test startegies and wider topics.'
 url:              https://dp2020-dev.github.io
-baseurl:          /
+baseurl:          
 
 author:
   name:           'Daniel Phillips'
