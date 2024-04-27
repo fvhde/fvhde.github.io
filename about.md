@@ -1,5 +1,5 @@
 ---
-layout: ppost
+layout: post
 title: About
 ---
 
