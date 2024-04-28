@@ -6,9 +6,9 @@ title: Use the 5W framework to get your own personal study plan from ChatGpt (or
 
 <i>Note: this blog post is a summary of a talk I have delivered to test groups.</i>
 
-One of the most rewarding (and challenging) aspects of software testing is keeping up to date with the pace of change in the industry- from new test tools, changes in the technology stack or wider disruption (AI is a great example).
+One of the most rewarding (and challenging) aspects of software testing is keeping up to date with the pace of change in the industry- from new test tools, changes in the technology stack or wider disruption, e.g. AI is a great example.
 
-Therefore the ability to self-learn and learn ‘on the job’ is a key skill for a software tester, and with that in mind I’ve found utilising the 5W framework invaluable to take advantage of what ChatGpt ) or any other large language model) can offer. 
+Therefore the ability to self-learn and learn ‘on the job’ is a key skill for a software tester, and with that in mind I’ve found utilising the <i>5W framework</i> invaluable to take advantage of what ChatGpt or any other large language model (LLM) can offer. 
 
 ### Why do we need a framework?
 
@@ -16,9 +16,9 @@ This is a simple technique which forces us to think through what information and
 
 ### What is the 5W?
 
-This technique is from an excellent blog from Tina Huang, and is originally based on learning a programming language but is equally applicable to test related learning:
+This technique is from an excellent blog by Tina Huang, and is originally based on learning a programming language but is equally applicable to test related learning:
 
-Apply 5 W framework to get a more relevant response (the example used here is to learn Selenium):
+Apply 5 W framework to get a more relevant response (the example I've used here is to learn Selenium):
 <strong>
 <ul>
 
@@ -39,7 +39,7 @@ Based on this example, this gives us the following prompt to input into the LLM:
 Suggest reliable web resources that can be easily found through a web search or by directly visiting the official websites.</strong>
 
 
-The above style of prompt should give a structured plan based in the 5W what, in the timelines defined in the when. I’ve found this approach helpful when learning Cypress for example.
+The above style of prompt should give a structured plan based in the 5W <i>what</i>, in the timelines defined in the <i>when</i>. I’ve found this approach helpful when learning Cypress for example.
 
 ![An example response, 'How to use ChatGPT for your own study plan', January 2024](/images/sampleResponse.jpg)
 
@@ -59,7 +59,7 @@ Some of the advantages of using this framework in ChatGPT (or another LLM):
 ![Test Talks Wales, 'How to use ChatGPT for your own study plan', January 2024](/images/TTW_January2024.jpg)
 
 
-I’ve personally used this framework as part of our development and learning in BJSS Test & Assurance, and it’s the basis of a talk I’ve presented at [Test Talks Wales]( https://www.meetup.com/test-talks-wales/events/298323939/), and [Ministry of Testing Talks Newcastle](https://www.meetup.com/mot-newcastle/events/298859530/). 
+As mentioned above I’ve personally used this framework as part of our development and learning in BJSS Test & Assurance, and it’s the basis of a talk I’ve presented at [Test Talks Wales]( https://www.meetup.com/test-talks-wales/events/298323939/), and [Ministry of Testing Talks Newcastle](https://www.meetup.com/mot-newcastle/events/298859530/). 
 
 ![MoT Newcastle Group, 'How to use ChatGPT for your own study plan', JMarch 2024](/images/MoT_Newcastle.webp)
 
