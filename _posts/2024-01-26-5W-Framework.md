@@ -27,9 +27,10 @@ Apply 5 W framework to get a more relevant response (the example I've used here 
 <li><b> When? </b> Timeline, amount of time available.</li>
 <li><b> Where? </b> Online courses, videos or text based courses.</li>
 <li><b> Why? </b> What's the goal? (e.g. Automated testing using Java/Selenium).</li>
-
-Source:[Tina Huang – YouTube: How to learn to code FAST using ChatGPT (it's a game changer seriously)](https://www.youtube.com/watch?v=VznoKyh6AXs&list=LL&index=2&t=377s)
+</strong>
 </ul>
+
+Source: [Tina Huang – YouTube: How to learn to code FAST using ChatGPT (it's a game changer seriously)](https://www.youtube.com/watch?v=VznoKyh6AXs&list=LL&index=2&t=377s&themeRefresh=1)
 
 ### 5W prompt example
 
