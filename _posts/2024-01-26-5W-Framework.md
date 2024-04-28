@@ -41,6 +41,8 @@ Suggest reliable web resources that can be easily found through a web search or 
 
 The above style of prompt should give a structured plan based in the 5W what, in the timelines defined in the when. I’ve found this approach helpful when learning Cypress for example.
 
+![An example response, 'How to use ChatGPT for your own study plan', January 2024](/images/sampleResponse.jpg)
+
 ### Do we need a framework?
 
 Some of the advantages of using this framework in ChatGPT (or another LLM):
@@ -54,6 +56,11 @@ Some of the advantages of using this framework in ChatGPT (or another LLM):
 
 ### Talks
 
+![Test Talks Wales, 'How to use ChatGPT for your own study plan', January 2024](/images/TTW_January2024.jpg)
+
+
 I’ve personally used this framework as part of our development and learning in BJSS Test & Assurance, and it’s the basis of a talk I’ve presented at [Test Talks Wales]( https://www.meetup.com/test-talks-wales/events/298323939/), and [Ministry of Testing Talks Newcastle](https://www.meetup.com/mot-newcastle/events/298859530/). 
+
+![MoT Newcastle Group, 'How to use ChatGPT for your own study plan', JMarch 2024](/images/MoT_Newcastle.jpg)
 
 If you have any questions of feedback based on this post or after a talk, do please get in touch.
