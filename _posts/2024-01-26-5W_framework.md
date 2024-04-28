@@ -56,4 +56,7 @@ Some of the advantages of using this framework in ChatGPT (or another LLM):
 
 ### Talks
 
-I’ve personally used this framework as part, and it’s the basis of a talk I’ve presented at [Test Talks Wales]( https://www.meetup.com/test-talks-wales/events/298323939/), and [Ministry of Testing Talks Newcastle](https://www.meetup.com/mot-newcastle/events/298859530/). 
+![Test Talk Wales January 2024](/10000008998.jpg)
+
+
+I’ve personally used this framework as part of our work in BJSS Test & Assurance, and it’s the basis of a talk I’ve presented at [Test Talks Wales]( https://www.meetup.com/test-talks-wales/events/298323939/), and [Ministry of Testing Talks Newcastle](https://www.meetup.com/mot-newcastle/events/298859530/), and other events. If you have any questions about this framework or regarding my talk, do please get in touch.
