@@ -19,4 +19,4 @@ Working in succesuful, productive agile teams in CI/DO projects has given me a g
 
 One of the rewarding aspects of a career on software testing is the collaborative and supportive nature of the industry, including many great blogs/websites (too many to mention here) and the brilliant groups such as Ministry of Testing and Test Talks (partically the meet ups :) ) I'v benefited a great deal from the meet ups, blogs talks and I'd like to use this blog to make my own small contrivution, so I hope you find it useful/of some interest.
 
-Finally, as I'm based in Wales the word'Testio' is a slang/informal word fortesting in Welsh (I stress that's informal!) so I have a bi lingual blog title :) 
+Finally, as I'm based in Wales the word 'Testio' is a slang/informal word for testing in Welsh (emphasis on informal!) so I have a bi-lingual blog title :) 
