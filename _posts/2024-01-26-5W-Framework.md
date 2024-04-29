@@ -65,3 +65,8 @@ As mentioned above I’ve personally used this framework as part of our developm
 ![MoT Newcastle Group, 'How to use ChatGPT for your own study plan', JMarch 2024](/images/MoT_Newcastle.webp)
 
 If you have any questions of feedback based on this post or after a talk, do please get in touch.
+
+
+<a href="mailto:ebost2004@yahoo.co.uk"><img src="/images/emailIcon2.jpeg"  alt="DEmail icon - small" width="100" height="100"></a>
+
+<a href="www.linkedin.com/in/daniel-phillips-ba99161b8"><img src="/images/LinkedIn-small.png"  alt="DEmail icon - small" width="100" height="100"></a>
