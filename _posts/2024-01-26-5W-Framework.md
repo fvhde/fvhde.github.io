@@ -69,4 +69,4 @@ If you have any questions of feedback based on this post or after a talk, do ple
 
 <a href="mailto:ebost2004@yahoo.co.uk"><img src="/images/email2.webp"  alt="email2" width="70" height="70"></a>
 
-<a href="www.linkedin.com/in/daniel-phillips-ba99161b8"><img src="/images/Llinkedin3.webp"  alt="LI icon - small" width="70" height="70"></a>
+<a href="www.linkedin.com/in/daniel-phillips-ba99161b8"><img src="/images/linkedin3.webp"  alt="LI icon - small" width="70" height="70"></a>
