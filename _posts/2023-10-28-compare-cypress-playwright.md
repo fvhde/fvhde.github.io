@@ -11,7 +11,8 @@ To evaluate these tools myself, I set up a repo to do some basic UI automation, 
 
 ### Test Plan
 
-To compare these test tools, I used the [5W]{https://testiotech.com/2024/01/26/5W-Framework/} approach in ChatGPT to come up with this outline:
+
+To compare these test tools, I used the [5W](https://testiotech.com/2024/01/26/5W-Framework/) approach in ChatGPT to come up with this outline:
 
 <ul>
 <li>Page Loads: Ensure that specified page load correctly.</li>
