@@ -55,5 +55,5 @@ This class is used in E2E tests, e.g. in E2EloginPurchases test file, we get the
 
 {% gist dc6175465df73d5c706268bf8add1429 %}
 
-In addition to Cypress documenttion, this blog proved useful in understand more about Cypress Fixtures:
+In addition to Cypress documention, this blog proved useful in understand more about Cypress Fixtures:
 https://testersdock.com/cypress-fixtures/
