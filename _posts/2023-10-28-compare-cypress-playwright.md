@@ -58,6 +58,8 @@ This class is used in E2E tests, e.g. in E2EloginPurchases test file, we get the
 
     {% gist 2febfb086c687c0939edf2f1551e847b#file-userdetails-json %}
 
+    {{< gist dp2020-dev 2febfb086c687c0939edf2f1551e847b "gistshortcode" >}}
+
 
 ..and from that line on we can use the details from the fixture file in the test:
 
