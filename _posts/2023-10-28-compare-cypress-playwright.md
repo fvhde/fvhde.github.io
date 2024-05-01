@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting hands with test tools: Cypress versus Playwright
+title: Getting hands with test tools- Cypress versus Playwright
 ---
 
 <i>This post will give you a bit of a background int these widely used tools, some advice to get you up a running and a plan to let you try it for yourself.</i>
@@ -55,6 +55,9 @@ This class is used in E2E tests, e.g. in E2EloginPurchases test file, we get the
     })
 
     <script src="https://gist.github.com/dp2020-dev/2febfb086c687c0939edf2f1551e847b.js"></script>
+
+    {% gist 2febfb086c687c0939edf2f1551e847b %}
+
 
 ..and from that line on we can use the details from the fixture file in the test:
 
