@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Use the 5W framework to get your own personal study plan from ChatGpt (or other LLM)
+title: Use the 5W framework to get your own personal study plan from ChatGPT (or other LLM)
 ---
 
 
