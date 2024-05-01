@@ -56,7 +56,7 @@ This class is used in E2E tests, e.g. in E2EloginPurchases test file, we get the
 
     <script src="https://gist.github.com/dp2020-dev/2febfb086c687c0939edf2f1551e847b.js"></script>
 
-    {% gist 2febfb086c687c0939edf2f1551e847b %}
+    {% gist 2febfb086c687c0939edf2f1551e847b#file-userdetails-json %}
 
 
 ..and from that line on we can use the details from the fixture file in the test:
