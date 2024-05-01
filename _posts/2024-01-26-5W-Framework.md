@@ -6,9 +6,9 @@ title: Use the 5W framework to get your own personal study plan from ChatGPT (or
 
 <i>Note: this blog post is a summary of a talk I have delivered to test groups.</i>
 
-One of the most rewarding (and challenging) aspects of software testing is keeping up to date with the pace of change in the industry- from new test tools, changes in the technology stack or wider disruption (AI is a great example).
+One of the most rewarding (and challenging) aspects of software testing is keeping up to date with the pace of change in the industry- from new test tools, changes in the technology stack or wider disruption, e.g. AI is a great example.
 
-Therefore the ability to self-learn and learn ‘on the job’ is a key skill for a software tester, and with that in mind I’ve found utilising the 5W framework invaluable to take advantage of what ChatGpt ) or any other large language model) can offer. 
+Therefore the ability to self-learn and learn ‘on the job’ is a key skill for a software tester, and with that in mind I’ve found utilising the <i>5W framework</i> invaluable to take advantage of what ChatGpt or any other large language model (LLM) can offer. 
 
 ### Why do we need a framework?
 
@@ -16,20 +16,21 @@ This is a simple technique which forces us to think through what information and
 
 ### What is the 5W?
 
-This technique is from an excellent blog from Tina Huang, and is originally based on learning a programming language but is equally applicable to test related learning:
+This technique is from an excellent blog by Tina Huang, and is originally based on learning a programming language but is equally applicable to test related learning:
 
-Apply 5 W framework to get a more relevant response (the example used here is to learn Selenium):
+Apply 5 W framework to get a more relevant response (the example I've used here is to learn Selenium):
 <strong>
 <ul>
 
-<li>Who? What role does ChatGPT have-  e.g. tutor/trainer.</li>
-<li>What? Do we want to learn? (e.g. Selenium web driver with Java).</li>
-<li>When? Timeline, amount of time available.</li>
-<li>Where? Online courses, videos or text based courses.</li>
-<li>Why? What's the goal? (e.g. Automated testing using Java/Selenium).</li>
-
-Source:[Tina Huang – YouTube: How to learn to code FAST using ChatGPT (it's a game changer seriously)](https://www.youtube.com/watch?v=VznoKyh6AXs&list=LL&index=2&t=377s)
+<li><b> Who? </b> What role does ChatGPT have-  e.g. tutor/trainer.</li>
+<li><b> What? </b> Do we want to learn? (e.g. Selenium web driver with Java).</li>
+<li><b> When? </b> Timeline, amount of time available.</li>
+<li><b> Where? </b> Online courses, videos or text based courses.</li>
+<li><b> Why? </b> What's the goal? (e.g. Automated testing using Java/Selenium).</li>
+</strong>
 </ul>
+
+Source: [Tina Huang – YouTube: How to learn to code FAST using ChatGPT (it's a game changer seriously)](https://www.youtube.com/watch?v=VznoKyh6AXs&list=LL&index=2&t=377s&themeRefresh=1)
 
 ### 5W prompt example
 
@@ -39,7 +40,7 @@ Based on this example, this gives us the following prompt to input into the LLM:
 Suggest reliable web resources that can be easily found through a web search or by directly visiting the official websites.</strong>
 
 
-The above style of prompt should give a structured plan based in the 5W what, in the timelines defined in the when. I’ve found this approach helpful when learning Cypress for example.
+The above style of prompt should give a structured plan based in the 5W <i>what</i>, in the timelines defined in the <i>when</i>. I’ve found this approach helpful when learning Cypress for example.
 
 ![An example response, 'How to use ChatGPT for your own study plan', January 2024](/images/sampleResponse.jpg)
 
@@ -59,8 +60,13 @@ Some of the advantages of using this framework in ChatGPT (or another LLM):
 ![Test Talks Wales, 'How to use ChatGPT for your own study plan', January 2024](/images/TTW_January2024.jpg)
 
 
-I’ve personally used this framework as part of our development and learning in BJSS Test & Assurance, and it’s the basis of a talk I’ve presented at [Test Talks Wales]( https://www.meetup.com/test-talks-wales/events/298323939/), and [Ministry of Testing Talks Newcastle](https://www.meetup.com/mot-newcastle/events/298859530/). 
+As mentioned above I’ve personally used this framework as part of our development and learning in BJSS Test & Assurance, and it’s the basis of a talk I’ve presented at [Test Talks Wales]( https://www.meetup.com/test-talks-wales/events/298323939/), and [Ministry of Testing Talks Newcastle](https://www.meetup.com/mot-newcastle/events/298859530/). 
 
-![MoT Newcastle Group, 'How to use ChatGPT for your own study plan', JMarch 2024](/images/MoT_Newcastle.jpg)
+![MoT Newcastle Group, 'How to use ChatGPT for your own study plan', JMarch 2024](/images/MoT_Newcastle.webp)
 
 If you have any questions of feedback based on this post or after a talk, do please get in touch.
+
+
+<a href="mailto:ebost2004@yahoo.co.uk"><img src="/images/email2.webp"  alt="email2" width="70" height="70"></a>
+
+<a href="www.linkedin.com/in/daniel-phillips-ba99161b8"><img src="/images/linkedin3.webp"  alt="LI icon - small" width="70" height="70"></a>
