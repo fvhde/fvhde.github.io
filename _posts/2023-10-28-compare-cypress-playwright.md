@@ -3,18 +3,31 @@ layout: post
 title: Getting hands with test tools- Cypress versus Playwright
 ---
 
-<i>This post will give you a bit of a background int these widely used tools, some advice to get you up a running and a plan to let you try it for yourself.</i>
+<i>This post will give you an insight into these widely used tools, some advice to get you up a running and a plan to let you try automating UI tests for yourself.</i>
 
-Alongside Selenium, Cypress and Playwright are the test automation tools a test automation engineer are likely to come across. There is much discussion about the pros and cons of each tool, which is the most suitable for a given project etc. but you may want to try these tools, so this post will give some tips to get you up and running.
+Alongside Selenium, Cypress and Playwright are currently amongst the most widely used test automation tools. There is a lot of discussion about the pros and cons of each tool, which is the most suitable for a given project etc. but you may want to try these tools out for yourself, this post will help you to get up and running, and run some basic UI tests.
 
-To evaluate these tools myself, I set up a repo to do some basic UI automation, one using Cypress the other Playwright to compare them side by side (I will add Selenium Webdriver soon). If you can set up these tools locally, you will be able to set up and run automated UI test, or if you wish to save time check out the material in the repo itself and run it.
+To evaluate these tools myself, I set up a repo to do some basic UI automation, one using Cypress the other Playwright to compare them side by side (I will add Selenium Webdriver soon). If you can set up these tools locally, you will be able to follow and implement the simple test plan outlined below, or if you wish to save time check out the material in the repo itself and run it.
+
+### Test Plan
+
+To compare these test tools, I used the [5W]{https://testiotech.com/2024/01/26/5W-Framework/} approach in ChaGPT to come up with this outline:
+
+<ul>
+<li>Page Loads: Ensure that specified page load correctly.</li>
+<li>Navigation: Verify the navigation within the web shop.</li>
+<li>Registered User Login: Test the login process for registered users.</li>
+<li>Add to Basket and Checkout: Check the functionality of adding items to the basket and completing the checkout process.</li>
+</ul>
+
+The system under test (S.U.T) has proven to be really useful but you of course may have a preferred alternative (generally we'll be covering an e-commerce transactions).
 
 ### Setting up Cypress
 
 The documentation on installing Cypress itself is pretty user friendly:
 https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements
 
-Tip: if on running 'npx cypress open' you see a 'Cypress Configuration Error', ensure you are running cypress from the right folder level, it needs to be in a folder above the cypress.conflig.js level to avoid any config errors.
+Tip: if on running 'npx cypress open' you see a 'Cypress Configuration Error', ensure you are running cypress from the right folder level, it needs to be in a folder above the cypress.config.js level to avoid any config errors.
 <image: cypress config error>
 
 Once cypress is up and running in the browser, my approach was to follow the Getting Started page to set up the first 'E2E' test, and build on that to start covering the project plan.
@@ -35,6 +48,7 @@ A lot of our UI tests in this plan use the same user details info for each test,
 
 In the fixtures file, the userDetails class contains user log in details:
 
+{% highlight js %}
 {
 "username": "test",
 "password": "test",
@@ -46,6 +60,7 @@ In the fixtures file, the userDetails class contains user log in details:
 "month": "April",
 "year": "2023"
 }
+{% endhighlight %}
 
 This class is used in E2E tests, e.g. in E2EloginPurchases test file, we get the fixture file:
 
@@ -55,5 +70,5 @@ This class is used in E2E tests, e.g. in E2EloginPurchases test file, we get the
 
 {% gist dc6175465df73d5c706268bf8add1429 %}
 
-In addition to Cypress documention, this blog proved useful in understand more about Cypress Fixtures:
+In addition to Cypress documentation, this blog proved useful in understand more about Cypress Fixtures:
 https://testersdock.com/cypress-fixtures/
