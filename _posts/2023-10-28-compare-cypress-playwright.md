@@ -11,7 +11,8 @@ To evaluate these tools myself, I set up a repo to do some basic UI automation, 
 
 ### Test Plan
 
-To compare these test tools, I used the [5W](https://testiotech.com/2024/01/26/5W-Framework/) approach in ChaGPT to come up with this outline:
+
+To compare these test tools, I used the [5W](https://testiotech.com/2024/01/26/5W-Framework/) approach in ChatGPT to come up with this outline:
 
 <ul>
 <li>Page Loads: Ensure that specified page load correctly.</li>
@@ -25,24 +26,27 @@ The system under test (S.U.T) has proven to be really useful but you of course m
 ### Setting up Cypress
 
 The documentation on installing Cypress itself is pretty user friendly:
+
 https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements
 
 Tip: if on running 'npx cypress open' you see a 'Cypress Configuration Error', ensure you are running cypress from the right folder level, it needs to be in a folder above the cypress.config.js level to avoid any config errors.
 <image: cypress config error>
 
-Once cypress is up and running in the browser, my approach was to follow the Getting Started page to set up the first 'E2E' test, and build on that to start covering the project plan.
+Once cypress is up and running in the browser, my approach was to follow the Getting Started page to set up the first 'E2E' test, and build on that to start covering the project plan:
 
 https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test
 
 #### Setting the baseURL
 
-This is very useful to not have to explicitly use the SUT url (e.g. www.blazemeter.com) when writing tests, we can define the baseUrl tin cypress.config.js in project root. Cypress calls this base url when '/' is used in an E2E test, e,g.
+For UI tests its very useful to not have to explicitly use the url of the system under test (e.g. www.blazemeter.com). We can define the baseUrl in the cypress.config.js in project root. Cypress calls this base url when '/' is used in an E2E test, e.g.
 
-cy.visit('/') // '/' uses the baseUrl in the cypress.config
+{% highlight js %}
+cy.visit('/') // uses the baseUrl ("www.blazemeter.com) in the cypress.config to open the url.
+{% endhighlight %}
 
-### Fixtures
+#### Fixtures
 
-A lot of our UI tests in this plan use the same user details info for each test, and rather than repeat those strings in each test, we can define a fixture file to store all our log in data, and reuse it in each test.
+A lot of the UI tests in this plan use the same user details info for each test, and rather than repeat those strings in each test, we can define a fixture file to store all our log in data, and reuse it in each test.
 
 #### Example:
 
@@ -72,3 +76,9 @@ This class is used in E2E tests, e.g. in E2EloginPurchases test file, we get the
 
 In addition to Cypress documentation, this blog proved useful in understand more about Cypress Fixtures:
 https://testersdock.com/cypress-fixtures/
+
+#### Time Travel
+
+The time travel feature is effectively a record of the changing state of the system under test, which has proven to be invaluable to understand how the website behaves in response to our test inputs, and to debug.
+
+Lets us the demonstrate this by looking at an E2E test that uses our baseUrl set in config, and some of our imported fixture data.
