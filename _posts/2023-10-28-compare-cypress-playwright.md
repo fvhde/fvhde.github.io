@@ -89,3 +89,23 @@ https://testersdock.com/cypress-fixtures/
 The time travel feature is effectively a record of the changing state of the system under test, which has proven to be invaluable to understand how the website behaves in response to our test inputs, and to debug.
 
 Lets us the demonstrate this by looking at an E2E test that uses our baseUrl set in config, and some of our imported fixture data.
+
+##### Example
+
+The E2Eloginpurchases verifies the log in process works with a valid username/password, and checks a successful log in message appears on screen.
+
+![Passing E2E run in Cypress browser view](/images/1_test_passes.png)
+
+In the spec window of Cypress browser we can see our test code has used our configured baseURL and knows '/' should be 'www.blazemeter.com', and uses the imported config to pass in userName & userPassword.
+
+![Passing E2E run in Cypress browser view](/images/2_travel_back.png)
+
+On the successful run, we can see the test step to verify a message appears on screen 'Welcome <user name>' ('Welcome test' in this case):
+
+![Passing E2E run in Cypress browser view](/images/3_loggedIn.png)
+
+The advantage of time travel is that it makes it really convenient and efficient to check the variables we're passing in, and how the system behaves. If we have a failing test, we can efficiently debug by 'travelling' to the steps in question. In the example below, the test step expects a different user name to what's being passed on screen.
+
+![Passing E2E run in Cypress browser view](/images/4_failed_test.png)
+
+The failed step is identified and we can have a closer look at exactly what was happening at that point on the system under test.
