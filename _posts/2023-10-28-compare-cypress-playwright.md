@@ -22,7 +22,7 @@ To compare these test tools, I used the [5W](https://testiotech.com/2024/01/26/5
 
 The system under test used here (www.blazemeter.com) has proven to be really useful for e-commerce type testing, but you of course may have a preferred alternative (generally we'll be covering an e-commerce transactions).
 
-### Setting up Cypress
+### Setting up Cypress and run tests
 
 The documentation on installing Cypress itself is pretty user friendly:
 
@@ -109,3 +109,80 @@ The advantage of time travel is that it makes it really convenient and efficient
 ![Passing E2E run in Cypress browser view](/images/4_failed_test.png)
 
 The failed step is identified and we can have a closer look at exactly what was happening at that point on the system under test.
+
+### Cypress - Summary
+
+In summary, the Cypress documentation allows us to get up and running pretty quickly, and the example given of setting up the first test allows us to build up the test plan. In the post we had a quick look at setting a base url and test config, and I personally I was impressed with the time travel feature- some of the page elements on the system under test were difficult to identify in javascript, the time travel showed the exact stage and screen where the issues were, which was invaluable when it came to debugging.
+
+## Set up Playwright and run tests
+
+<i> This is a rough guide to get up and running (follow the links for more detailed instruction) and we'll use the same test plan as mentioned in Test Plan.</i>
+
+### Installation
+
+Note: you will need to have have NPM installed.
+
+I created a folder structure via Visual Studio Code, see ![Automating End-to-End testing with Playwright and Azure Pipelines](https://techcommunity.microsoft.com/t5/azure-architecture-blog/automating-end-to-end-testing-with-playwright-and-azure/ba-p/3883704)
+
+Once the structure is in place the guide is straightforward, note the step 6 'Execute Playwright Test Script' would not work for me, my solution was change directly (in Terminal) to my playwright folder, the run: npm init playwright@latest
+
+To run directly in VSC, you need to install playwright extension
+https://playwright.dev/docs/getting-started-vscode#:~:text=Run%20the%20tests%20in%20debug,the%20menu%20in%20VS%20Code.
+Remember to Install Playwright in command at top of VSC, select browsers.
+You should now see run icon in VSC.
+
+### Create tests
+
+The initial set up of Playwright helpfully includes a file called ![demo.spec](https://github.com/dp2020-dev/blazemeter-ecommerce-automated-tests/blob/main/playwright/tests/demo.spec.ts), this gives us a solid example to explain how the tool works, and I used this to build up the test scope.
+
+TODO: add gist for demo.spec code
+
+To run tests, use the following command in either VSC or the command line/terminal.
+
+### Playwright codegen
+
+Playwright has an impressive feature to record script automatically called Codegen. In theory it can record the whole log in, add item to basket etc. for us, but I found it more practically useful to find those page elements which were awkward to fund and use in Cypress.
+
+How to find page elements and examples of how to test:
+npx playwright codegen browserstack.com
+
+Browerstack has a useful summary here: https://www.browserstack.com/guide/playwright-debugging#:~:text=Playwright%20is%20an%20open%2Dsource,the%20headful%20mode%20for%20tests
+
+### Authenticated log in state
+
+E.g. https://www.cuketest.com/playwright/docs/auth/
+
+Overview:
+Rather than have to repeat the log in steps explicitly for each test that requires a logged in user (e.g. adding items to cart and checking out), its possible to save the 'logged in state' to a setting in the .config.ts file:
+
+storageState: "playwright/.auth/user.json",
+
+This object points at auth.setup (which is in the testDir location specified in the config). This file is effectively the successful log in test, and writes its logged in state back to the user.json file configured in playwright.config:
+
+await page.context().storageState({ path: authFile });
+
+Now, by importing the Test class, the logged in state is used, i.e. each test which imports this class is in a logged state as a begin action.
+
+If you want to see this applied, see the auth.setup.ts file in playwright/tests, and the user.json in playwright/playwright/.auth, or checkout this helpful write up: https://www.cuketest.com/playwright/docs/auth/
+
+### Traceviewer
+
+TODO: What is traceviewer?
+
+Viewing Playwright traces
+
+Check traceviewer is set on in config:
+
+    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    trace: "on-first-retry",
+
+To trace failing test, go to terminal and input:
+npx playwright test login.spec.ts:10 --trace on
+
+Where the failing test is in line :10
+
+This will open up a test report in a browser (or open the localhost url), the test report summarised the test results and includes the test steps.
+To see the trace, select the test and click trace (at bottom of page).
+
+This is a really good explanation and summary of Traceviewer, from the official Playwright channel:
+https://www.youtube.com/watch?v=lfxjs--9ZQs&t=55s
