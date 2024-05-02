@@ -11,7 +11,6 @@ To evaluate these tools myself, I set up a repo to do some basic UI automation, 
 
 ### Test Plan
 
-
 To compare these test tools, I used the [5W](https://testiotech.com/2024/01/26/5W-Framework/) approach in ChatGPT to come up with this outline:
 
 <ul>
@@ -21,7 +20,7 @@ To compare these test tools, I used the [5W](https://testiotech.com/2024/01/26/5
 <li>Add to Basket and Checkout: Check the functionality of adding items to the basket and completing the checkout process.</li>
 </ul>
 
-The system under test (S.U.T) has proven to be really useful but you of course may have a preferred alternative (generally we'll be covering an e-commerce transactions).
+The system under test used here (www.blazemeter.com) has proven to be really useful for e-commerce type testing, but you of course may have a preferred alternative (generally we'll be covering an e-commerce transactions).
 
 ### Setting up Cypress
 
@@ -31,6 +30,14 @@ https://docs.cypress.io/guides/getting-started/installing-cypress#System-require
 
 Tip: if on running 'npx cypress open' you see a 'Cypress Configuration Error', ensure you are running cypress from the right folder level, it needs to be in a folder above the cypress.config.js level to avoid any config errors.
 <image: cypress config error>
+
+Provided the installation has been successful, my prefered approach is to open a command line/terminal in the project folder, and run:
+
+{% highlight js %}
+npx cypress open
+{% endhighlight %}
+
+This should open up the Cypress Launchpad, and for this post we'll be concentrating on E2E testing (to cover an e-commerce system).
 
 Once cypress is up and running in the browser, my approach was to follow the Getting Started page to set up the first 'E2E' test, and build on that to start covering the project plan:
 
