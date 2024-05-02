@@ -11,7 +11,6 @@ To evaluate these tools myself, I set up a repo to do some basic UI automation, 
 
 ### Test Plan
 
-
 To compare these test tools, I used the [5W](https://testiotech.com/2024/01/26/5W-Framework/) approach in ChatGPT to come up with this outline:
 
 <ul>
@@ -21,7 +20,7 @@ To compare these test tools, I used the [5W](https://testiotech.com/2024/01/26/5
 <li>Add to Basket and Checkout: Check the functionality of adding items to the basket and completing the checkout process.</li>
 </ul>
 
-The system under test (S.U.T) has proven to be really useful but you of course may have a preferred alternative (generally we'll be covering an e-commerce transactions).
+The system under test used here (www.blazemeter.com) has proven to be really useful for e-commerce type testing, but you of course may have a preferred alternative (generally we'll be covering an e-commerce transactions).
 
 ### Setting up Cypress
 
@@ -31,6 +30,14 @@ https://docs.cypress.io/guides/getting-started/installing-cypress#System-require
 
 Tip: if on running 'npx cypress open' you see a 'Cypress Configuration Error', ensure you are running cypress from the right folder level, it needs to be in a folder above the cypress.config.js level to avoid any config errors.
 <image: cypress config error>
+
+Provided the installation has been successful, my prefered approach is to open a command line/terminal in the project folder, and run:
+
+{% highlight js %}
+npx cypress open
+{% endhighlight %}
+
+This should open up the Cypress Launchpad, and for this post we'll be concentrating on E2E testing (to cover an e-commerce system).
 
 Once cypress is up and running in the browser, my approach was to follow the Getting Started page to set up the first 'E2E' test, and build on that to start covering the project plan:
 
@@ -82,3 +89,23 @@ https://testersdock.com/cypress-fixtures/
 The time travel feature is effectively a record of the changing state of the system under test, which has proven to be invaluable to understand how the website behaves in response to our test inputs, and to debug.
 
 Lets us the demonstrate this by looking at an E2E test that uses our baseUrl set in config, and some of our imported fixture data.
+
+##### Example
+
+The E2Eloginpurchases verifies the log in process works with a valid username/password, and checks a successful log in message appears on screen.
+
+![Passing E2E run in Cypress browser view](/images/1_test_passes.png)
+
+In the spec window of Cypress browser we can see our test code has used our configured baseURL and knows '/' should be 'www.blazemeter.com', and uses the imported config to pass in userName & userPassword.
+
+![Passing E2E run in Cypress browser view](/images/2_travel_back.png)
+
+On the successful run, we can see the test step to verify a message appears on screen 'Welcome <user name>' ('Welcome test' in this case):
+
+![Passing E2E run in Cypress browser view](/images/3_loggedIn.png)
+
+The advantage of time travel is that it makes it really convenient and efficient to check the variables we're passing in, and how the system behaves. If we have a failing test, we can efficiently debug by 'travelling' to the steps in question. In the example below, the test step expects a different user name to what's being passed on screen.
+
+![Passing E2E run in Cypress browser view](/images/4_failed_test.png)
+
+The failed step is identified and we can have a closer look at exactly what was happening at that point on the system under test.
