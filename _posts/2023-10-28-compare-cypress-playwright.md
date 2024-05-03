@@ -120,7 +120,7 @@ In summary, the Cypress documentation allows us to get up and running pretty qui
 
 ### Installation
 
-Note: you will need to have have NPM installed.
+<i>Note: you will need to have have NPM installed.</i>
 
 I created a folder structure via Visual Studio Code, see [Automating End-to-End testing with Playwright and Azure Pipelines](https://techcommunity.microsoft.com/t5/azure-architecture-blog/automating-end-to-end-testing-with-playwright-and-azure/ba-p/3883704).
 
@@ -134,37 +134,65 @@ Once installed you should see a green run icon in the test spec window:
 
 ### Create tests
 
-The initial set up of Playwright helpfully includes a file called ![demo.spec](https://github.com/dp2020-dev/blazemeter-ecommerce-automated-tests/blob/main/playwright/tests/demo.spec.ts), this gives us a solid example to explain how the tool works, and I used this to build up the test scope.
+The initial set up of Playwright helpfully includes a file called [tests/example.spec.ts](https://github.com/dp2020-dev/blazemeter-ecommerce-automated-tests/blob/main/playwright/tests/demo.spec.ts), this gives us a solid example to explain how the tool works, and I used this to build up the test scope.
 
-TODO: add gist for demo.spec code
+{% highlight js %}
+import { test, expect } from '@playwright/test';
+
+test('has title', async ({ page }) => {
+await page.goto('https://playwright.dev/');
+
+// Expect a title "to contain" a substring.
+await expect(page).toHaveTitle(/Playwright/);
+});
+
+test('get started link', async ({ page }) => {
+await page.goto('https://playwright.dev/');
+
+// Click the get started link.
+await page.getByRole('link', { name: 'Get started' }).click();
+
+// Expects page to have a heading with the name of Installation.
+await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+});
+
+{% endhighlight js %}
 
 To run tests, use the following command in either VSC or the command line/terminal.
+{% highlight js %}
+npx playwright test --
+
+{% endhighlight js %}
 
 ### Playwright codegen
 
-Playwright has an impressive feature to record script automatically called Codegen. In theory it can record the whole log in, add item to basket etc. for us, but I found it more practically useful to find those page elements which were awkward to fund and use in Cypress.
+Playwright has an impressive feature to record script automatically called Codegen. In theory it can record the whole log in, add item to basket etc. steps for us, but I found it more useful to find those page elements which were awkward to find and use in Cypress.
 
 How to find page elements and examples of how to test:
-npx playwright codegen browserstack.com
 
-Browerstack has a useful summary here: https://www.browserstack.com/guide/playwright-debugging#:~:text=Playwright%20is%20an%20open%2Dsource,the%20headful%20mode%20for%20tests
+{% highlight js %}
+npx playwright codegen browserstack.com
+{% endhighlight js %}
+
+Browerstack has a useful summary here:[www.browserstack.com/guide/playwright-debugging/](https://www.browserstack.com/guide/playwright-debugging#:~:text=Playwright%20is%20an%20open%2Dsource,the%20headful%20mode%20for%20tests)
 
 ### Authenticated log in state
 
-E.g. https://www.cuketest.com/playwright/docs/auth/
+Rather than have to repeat the log in steps explicitly for each test that requires a logged in user (e.g. adding items to cart and checking out), its possible to save the 'logged in state' to a setting in the [.config.ts file](https://github.com/dp2020-dev/blazemeter-ecommerce-automated-tests/blob/main/playwright/playwright/.auth/user.json):
 
-Overview:
-Rather than have to repeat the log in steps explicitly for each test that requires a logged in user (e.g. adding items to cart and checking out), its possible to save the 'logged in state' to a setting in the .config.ts file:
+{% highlight js %}
+storageState: "playwright/.auth/user.json"
+{% endhighlight js %}
 
-storageState: "playwright/.auth/user.json",
+This object points at [auth.setup](https://github.com/dp2020-dev/blazemeter-ecommerce-automated-tests/blob/main/playwright/tests/auth.setup.ts) (which is in the testDir location specified in the config). This file is effectively the successful log in test, and writes its logged in state back to the user.json file configured in playwright.config:
 
-This object points at auth.setup (which is in the testDir location specified in the config). This file is effectively the successful log in test, and writes its logged in state back to the user.json file configured in playwright.config:
-
+{% highlight js %}
 await page.context().storageState({ path: authFile });
+{% endhighlight js %}
 
 Now, by importing the Test class, the logged in state is used, i.e. each test which imports this class is in a logged state as a begin action.
 
-If you want to see this applied, see the auth.setup.ts file in playwright/tests, and the user.json in playwright/playwright/.auth, or checkout this helpful write up: https://www.cuketest.com/playwright/docs/auth/
+If you want to see this applied, see the [auth.setup](https://github.com/dp2020-dev/blazemeter-ecommerce-automated-tests/blob/main/playwright/tests/auth.setup.ts) file in playwright/tests, and the [user.json](https://github.com/dp2020-dev/blazemeter-ecommerce-automated-tests/blob/main/playwright/playwright/.auth/user.json) in playwright/playwright/.auth, or checkout this helpful write up: [https://www.cuketest.com/playwright/docs/auth/](https://www.cuketest.com/playwright/docs/auth/)
 
 ### Traceviewer
 
