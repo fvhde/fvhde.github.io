@@ -122,14 +122,15 @@ In summary, the Cypress documentation allows us to get up and running pretty qui
 
 Note: you will need to have have NPM installed.
 
-I created a folder structure via Visual Studio Code, see ![Automating End-to-End testing with Playwright and Azure Pipelines](https://techcommunity.microsoft.com/t5/azure-architecture-blog/automating-end-to-end-testing-with-playwright-and-azure/ba-p/3883704)
+I created a folder structure via Visual Studio Code, see [Automating End-to-End testing with Playwright and Azure Pipelines](https://techcommunity.microsoft.com/t5/azure-architecture-blog/automating-end-to-end-testing-with-playwright-and-azure/ba-p/3883704)
 
 Once the structure is in place the guide is straightforward, note the step 6 'Execute Playwright Test Script' would not work for me, my solution was change directly (in Terminal) to my playwright folder, the run: npm init playwright@latest
 
-To run directly in VSC, you need to install playwright extension
-https://playwright.dev/docs/getting-started-vscode#:~:text=Run%20the%20tests%20in%20debug,the%20menu%20in%20VS%20Code.
-Remember to Install Playwright in command at top of VSC, select browsers.
-You should now see run icon in VSC.
+To run directly in VSC, you need to install playwright extension, as per:
+[https://playwright.dev/docs/getting-started-vscode#installation](https://playwright.dev/docs/getting-started-vscode#installation).
+
+Once installed you should see a green run icon for test spec window:
+![VSC run icon](/images/VSC_pw_run_icon.png)
 
 ### Create tests
 
