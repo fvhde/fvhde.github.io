@@ -214,4 +214,5 @@ This will open up a test report in a browser (or open the localhost url), the te
 To see the trace, select the test and click trace (at bottom of page).
 
 This is a really good explanation and summary of Traceviewer, from the official Playwright channel:
-https://www.youtube.com/watch?v=lfxjs--9ZQs&t=55s
+
+<iframe width="427" height="240" src="https://www.youtube.com/embed/lfxjs--9ZQs" title="Viewing Playwright traces" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
