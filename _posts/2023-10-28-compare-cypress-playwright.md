@@ -112,7 +112,7 @@ The failed step is identified and we can have a closer look at exactly what was 
 
 ### Cypress - Summary
 
-In summary, the Cypress documentation allows us to get up and running pretty quickly, and the example given of setting up the first test allows us to build up the test plan. In the post we had a quick look at setting a base url and test config, and I personally I was impressed with the time travel feature- some of the page elements on the system under test were difficult to identify in javascript, the time travel showed the exact stage and screen where the issues were, which was invaluable when it came to debugging.
+In summary, the Cypress documentation allows us to get up and running pretty quickly, and the example given of setting up the first test allows us to build up the test plan. In the post we had a quick look at setting a base url and test config, and I personally I was impressed with the time travel feature- {#cypress_page_locator}some of the page elements on the system under test were difficult to identify in javascript, the time travel showed the exact stage and screen where the issues were, which was invaluable when it came to debugging.
 
 ## Set up Playwright and run tests
 
@@ -122,7 +122,7 @@ In summary, the Cypress documentation allows us to get up and running pretty qui
 
 <i>Note: you will need to have have NPM installed.</i>
 
-I created a folder structure via Visual Studio Code, see [Automating End-to-End testing with Playwright and Azure Pipelines](https://techcommunity.microsoft.com/t5/azure-architecture-blog/automating-end-to-end-testing-with-playwright-and-azure/ba-p/3883704).
+I recommend creating a folder structure via Visual Studio Code, see [Automating End-to-End testing with Playwright and Azure Pipelines](https://techcommunity.microsoft.com/t5/azure-architecture-blog/automating-end-to-end-testing-with-playwright-and-azure/ba-p/3883704).
 
 Once the structure is in place the guide is straightforward, note the step 6 'Execute Playwright Test Script' would not work for me, my solution was change directly (in Terminal) to my playwright folder, the run: npm init playwright@latest
 
@@ -166,7 +166,7 @@ npx playwright test --
 
 ### Playwright codegen
 
-Playwright has an impressive feature to record script automatically called Codegen. In theory it can record the whole log in, add item to basket etc. steps for us, but I found it more useful to find those page elements which were awkward to find and use in Cypress.
+Playwright has an impressive feature to record script automatically called Codegen. In theory it can record the whole log in, add item to basket etc. steps for us, but I found it more useful to find those page elements which were [awkward to find and use in Cypress.](cypress_page_locator)
 
 How to find page elements and examples of how to test:
 
