@@ -167,14 +167,23 @@ npx playwright test --
 ### Playwright codegen
 
 Playwright has an impressive feature to record script automatically called Codegen. In theory it can record the whole log in, add item to basket etc. steps for us, but I found it more useful to find those page elements which were [awkward to find and use in Cypress.](cypress_page_locator)
-
-How to find page elements and examples of how to test:
+For example, if we run the following command, the specified website and Playwright inspector will load up.
 
 {% highlight js %}
 npx playwright codegen browserstack.com
 {% endhighlight js %}
 
-Browerstack has a useful summary here:[www.browserstack.com/guide/playwright-debugging/](https://www.browserstack.com/guide/playwright-debugging#:~:text=Playwright%20is%20an%20open%2Dsource,the%20headful%20mode%20for%20tests)
+We can undertake our actions on the website, e.g. lets click log in, and input a user name and password:
+
+![demoblaze.com website has loaded](images/codegen_browser.png/400x200 "Medium example image")
+
+Our action in the browser are being tracked in the Playwright Inspector, so we can see the locators, tags and roles.
+
+![demoblaze.com website has loaded](images/codegen_actions.png/400x200 "Medium example image")
+
+In my experience, it didn't quite capture the whole test code I needed, but it definitely saved time in getting the right elements.
+
+Browerstack has a useful summary here: [www.browserstack.com/guide/playwright-debugging/](https://www.browserstack.com/guide/playwright-debugging#:~:text=Playwright%20is%20an%20open%2Dsource,the%20headful%20mode%20for%20tests)
 
 ### Authenticated log in state
 
