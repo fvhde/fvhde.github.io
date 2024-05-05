@@ -3,7 +3,7 @@ layout: post
 title: Azure AI Fundamentals (AI-900)
 ---
 
-As I've started getting to grips with Large Language models, code helpers such as GitHub co-pilot, and seen some of the really interesting talks about AI in the test community I was keen to understand more about the fundamentals behind AI- I found AI-900 an excellent course, and can strongly recommend it.
+As I've started getting to grips with Large Language models, code helpers such as GitHub co-pilot, and seen some of the really interesting talks about AI in the test community I was keen to understand more about the fundamentals behind AI- AI-900 was ideal, and can strongly recommend it.
 
 <iframe width="427" height="240" src="https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-900/" title="AI-900 Azure AI Fundamentals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
