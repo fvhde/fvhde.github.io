@@ -173,18 +173,11 @@ For example, if we run the following command, the specified website and Playwrig
 npx playwright codegen browserstack.com
 {% endhighlight js %}
 
-We can undertake our actions on the website, e.g. lets click log in, and input a user name and password:
-
-![demoblaze.com website has loaded](images/codegen_browser.png/400x200 "Medium example image")
-
-Our action in the browser are being tracked in the Playwright Inspector, so we can see the locators, tags and roles.
-
-![demoblaze.com website has loaded](images/codegen_actions.png/400x200 "Medium example image")
-
-In my experience, it didn't quite capture the whole test code I needed, but it definitely saved time in getting the right elements.
+We can undertake our actions on the website, e.g. lets click log in, and input a user name and password. As you can see in the clip below, the user actions in the browser is tracked in the Playwright Inspector, so we can see the locators, tags and roles etc.
 
 <iframe width="427" height="240" src="/images/PW_Codegen.mp4" title="Codegen with browser and inspector windows" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+In my experience, it didn't quite capture the whole test code I needed, but it definitely saved time in getting the right elements.
 
 Browerstack has a useful summary here: [www.browserstack.com/guide/playwright-debugging/](https://www.browserstack.com/guide/playwright-debugging#:~:text=Playwright%20is%20an%20open%2Dsource,the%20headful%20mode%20for%20tests)
 
