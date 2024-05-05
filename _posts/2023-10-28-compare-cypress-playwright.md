@@ -183,6 +183,9 @@ Our action in the browser are being tracked in the Playwright Inspector, so we c
 
 In my experience, it didn't quite capture the whole test code I needed, but it definitely saved time in getting the right elements.
 
+<iframe width="427" height="240" src="/images/PW_Codegen.mp4" title="Codegen with browser and inspector windows" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 Browerstack has a useful summary here: [www.browserstack.com/guide/playwright-debugging/](https://www.browserstack.com/guide/playwright-debugging#:~:text=Playwright%20is%20an%20open%2Dsource,the%20headful%20mode%20for%20tests)
 
 ### Authenticated log in state
