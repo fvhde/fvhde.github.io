@@ -5,7 +5,7 @@ title: Azure AI Fundamentals (AI-900)
 
 As I've started getting to grips with Large Language models, code helpers such as GitHub co-pilot, and seen some of the really interesting talks about AI in the test community I was keen to understand more about the fundamentals behind AI- AI-900 was ideal, and can strongly recommend it.
 
-<iframe width="427" height="240" src="https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-900/" title="AI-900 Azure AI Fundamentals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="427" height="240" src="[https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-900/](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification)" title="AI-900 Azure AI Fundamentals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 This has given me a really useful background in the fundamental concepts of AI and how its practically applied- it covers chat bots, prediction models, large language models etc. so certainly covers a wide range ot relevant topics. The hands on 'sand pit' exercises were really well designed and give a real insight into how regression, machine learning, training data and other fundamental AI concepts work. At the same time, the course is engaging an pretty short, so I'd recommend anyone with an interest in AI to give it a go.
 
