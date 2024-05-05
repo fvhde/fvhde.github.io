@@ -11,4 +11,3 @@ This has given me a really useful background in the fundamental concepts of AI a
 
 In terms of the course itself and the exam, it has a thorough self learning path which along with the self practice exam is all you really need, but I can also definitely recommend [John Savill's AI-900 - Azure AI Fundamentals Study Guide](https://www.youtube.com/watch?v=E9aarWMLJw0) as a practical summary.
 
-Best of luck to anyone who gives this a go!
