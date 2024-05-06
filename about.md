@@ -15,13 +15,12 @@ Working in successful, productive agile teams in CI/CD projects has given me a g
 
 ## About the Testio Tech blog
 
-One of the rewarding aspects of a career in software testing is the wealth of collaboration, innovation and discussionin the testing community, including many great blogs/websites (too many to mention here) and brilliant groups such as Ministry of Testing Meetups and Test Talks. I've benefited a great deal from this community and I'd like to use this blog to make my own small contribution.
+One of the interesting challenges of working in software testing is keeping up to date with the pace of change in our industry- for example in terms of disruption from AI, evolving or emerging test tools, certifications and so on. Having shared my approach to using AI, practical exprieence of test tools with test groups such as Test Talks and my colleages, it struck me that I should also post this on a blog.
 
 Finally, as I'm based in Wales the word 'Testio' is a slang/informal word for testing in Welsh (emphasis on informal!) so its a bi-lingual blog title!
 
 ## Contact Me
 
-
 <a href="mailto:ebost2004@yahoo.co.uk"><img src="/images/email2.webp"  alt="email2" width="70" height="70"></a>
 
-<a href="www.linkedin.com/in/daniel-phillips-ba99161b8"><img src="/images/linkedin3.webp"  alt="LI icon - small" width="70" height="70"></a>
+<a href="https://uk.linkedin.com/in/daniel-phillips-ba99161b"><img src="/images/linkedin3.webp"  alt="LI icon - small" width="70" height="70"></a>
