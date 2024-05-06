@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting hands with test tools- Cypress versus Playwright
+title: Getting hands on with test tools- Cypress versus Playwright
 ---
 
 <i>This post will give you an insight into these widely used tools, some advice to get you up a running and a plan to let you try automating UI tests for yourself.</i>
@@ -41,14 +41,14 @@ This should open up the Cypress Launchpad, and for this post we'll be concentrat
 
 Once cypress is up and running in the browser, my approach was to follow the Getting Started page to set up the first 'E2E' test, and build on that to start covering the project plan:
 
-https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test
+[https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test(https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)]
 
 #### Setting the baseURL
 
 For UI tests its very useful to not have to explicitly use the url of the system under test (e.g. www.blazemeter.com). We can define the baseUrl in the cypress.config.js in project root. Cypress calls this base url when '/' is used in an E2E test, e.g.
 
 {% highlight js %}
-cy.visit('/') // uses the baseUrl ("www.blazemeter.com) in the cypress.config to open the url.
+cy.visit('/') // uses the baseUrl ("www.blazemeter.com in our example) in the cypress.config to open the url.
 {% endhighlight %}
 
 #### Fixtures
@@ -82,7 +82,7 @@ This class is used in E2E tests, e.g. in E2EloginPurchases test file, we get the
 {% gist dc6175465df73d5c706268bf8add1429 %}
 
 In addition to Cypress documentation, this blog proved useful in understand more about Cypress Fixtures:
-https://testersdock.com/cypress-fixtures/
+[https://testersdock.com/cypress-fixtures/(https://testersdock.com/cypress-fixtures/)]
 
 #### Time Travel
 
@@ -92,7 +92,7 @@ Lets us the demonstrate this by looking at an E2E test that uses our baseUrl set
 
 ##### Example
 
-The E2Eloginpurchases verifies the log in process works with a valid username/password, and checks a successful log in message appears on screen.
+The [E2Eloginpurchases](https://github.com/dp2020-dev/blazemeter-ecommerce-automated-tests/blob/main/cypress/e2e/E2EloginPurchases.cy.js) E2E test verifies the log in process works with a valid username/password, and checks a successful log in message appears on screen.
 
 ![Passing E2E run in Cypress browser view](/images/1_test_passes.png)
 
@@ -112,7 +112,7 @@ The failed step is identified and we can have a closer look at exactly what was 
 
 ### Cypress - Summary
 
-In summary, the Cypress documentation allows us to get up and running pretty quickly, and the example given of setting up the first test allows us to build up the test plan. In the post we had a quick look at setting a base url and test config, and I personally I was impressed with the time travel feature- {#cypress_page_locator}some of the page elements on the system under test were difficult to identify in javascript, the time travel showed the exact stage and screen where the issues were, which was invaluable when it came to debugging.
+In summary, the Cypress documentation allows us to get up and running pretty quickly, and the example given of setting up the first test allows us to build up the test plan. In the post we had a quick look at setting a base url and test config, and I personally I was impressed with the [time travel feature]- {#cypress_page_locator}some of the page elements on the system under test were difficult to identify in javascript, the time travel showed the exact stage and screen where the issues were, which was invaluable when it came to debugging.
 
 ## Set up Playwright and run tests
 
