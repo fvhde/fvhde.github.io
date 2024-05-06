@@ -15,7 +15,7 @@ Working in successful, productive agile teams in CI/CD projects has given me a g
 
 ## About the Testio Test blog
 
-One of the rewarding aspects of a career in software testing is the wealth of collaboration and innovation in the testing community, including many great blogs/websites (too many to mention here) and brilliant groups such as Ministry of Testing Meetups and Test Talks. I've benefited a great deal from the community and I'd like to use this blog to make my own small contribution, so I hope you find it useful and of some interest.
+One of the rewarding aspects of a career in software testing is the wealth of collaboration, innovation and discussionin the testing community, including many great blogs/websites (too many to mention here) and brilliant groups such as Ministry of Testing Meetups and Test Talks. I've benefited a great deal from this community and I'd like to use this blog to make my own small contribution.
 
 Finally, as I'm based in Wales the word 'Testio' is a slang/informal word for testing in Welsh (emphasis on informal!) so its a bi-lingual blog title!
 
@@ -24,3 +24,28 @@ Finally, as I'm based in Wales the word 'Testio' is a slang/informal word for te
 <a href="mailto:ebost2004@yahoo.co.uk"><img src="/images/email2.webp"  alt="email2" width="70" height="70"></a>
 
 <a href="www.linkedin.com/in/daniel-phillips-ba99161b8"><img src="/images/linkedin3.webp"  alt="LI icon - small" width="70" height="70"></a>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Images on Same Line</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .container a {
+            margin-right: 10px; /* Adjust spacing as needed */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <a href="mailto:ebost2004@yahoo.co.uk"><img src="/images/email2.webp" alt="email2" width="70" height="70"></a>
+        <a href="www.linkedin.com/in/daniel-phillips-ba99161b8"><img src="/images/linkedin3.webp" alt="LI icon - small" width="70" height="70"></a>
+    </div>
+</body>
+</html>
