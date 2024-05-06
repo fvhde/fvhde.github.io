@@ -13,7 +13,7 @@ Working in successful, productive agile teams in CI/CD projects has given me a g
 
 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="daniel-phillips-ba99161b8" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://uk.linkedin.com/in/daniel-phillips-ba99161b8?trk=profile-badge">Daniel Phillips</a></div>
 
-## About the Testio Test blog
+## About the Testio Tech blog
 
 One of the rewarding aspects of a career in software testing is the wealth of collaboration, innovation and discussionin the testing community, including many great blogs/websites (too many to mention here) and brilliant groups such as Ministry of Testing Meetups and Test Talks. I've benefited a great deal from this community and I'd like to use this blog to make my own small contribution.
 
