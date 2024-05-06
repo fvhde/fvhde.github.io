@@ -26,7 +26,7 @@ Finally, as I'm based in Wales the word 'Testio' is a slang/informal word for te
 
 <a href="www.linkedin.com/in/daniel-phillips-ba99161b8"><img src="/images/linkedin3.webp"  alt="LI icon - small" width="70" height="70"></a> -->
 
-<!--<!DOCTYPE html>  -->
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
