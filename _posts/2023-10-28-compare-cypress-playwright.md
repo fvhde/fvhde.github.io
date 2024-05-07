@@ -3,15 +3,15 @@ layout: post
 title: Getting hands on with test tools- Cypress versus Playwright
 ---
 
-<i>This post will give you an insight into these widely used tools, some advice to get you up a running and a plan to let you try automating UI tests for yourself.</i>
+<i>This post will give some practical advice on installing [Cypress](### Setting up Cypress and run tests) and [Playwright](## Set up Playwright and run tests) to create and run some simple UI tests, and [a brief comparison](## Summary) between the two tools.</i>
 
 Alongside Selenium, Cypress and Playwright are currently amongst the most widely used test automation tools. There is a lot of discussion about the pros and cons of each tool, which is the most suitable for a given project etc. but you may want to try these tools out for yourself, this post will help you to get up and running, and run some basic UI tests.
 
-To evaluate these tools myself, I set up a repo to do some basic UI automation, one using Cypress the other Playwright to compare them side by side (I will add Selenium Webdriver soon). If you can set up these tools locally, you will be able to follow and implement the simple test plan outlined below, or if you wish to save time check out the material in the repo itself and run it.
+To evaluate these tools myself, I set up [a Git repo](https://github.com/dp2020-dev/blazemeter-ecommerce-automated-tests) to do some basic UI automation, one using Cypress the other Playwright to compare them side by side (I will add Selenium Webdriver soon). If you can set up these tools locally, you will be able to follow and implement the simple test plan outlined below, or alternatively clone the material in the repo itself and run it.
 
 ### Test Plan
 
-To compare these test tools, I used the [5W](https://testiotech.com/2024/01/26/5W-Framework/) approach in ChatGPT to come up with this outline:
+To compare these test tools, I used the [5W](https://testiotech.com/2024/01/26/5W-Framework/) approach in ChatGPT to come up with this outline of a test scope:
 
 <ul>
 <li>Page Loads: Ensure that specified page load correctly.</li>
@@ -20,7 +20,7 @@ To compare these test tools, I used the [5W](https://testiotech.com/2024/01/26/5
 <li>Add to Basket and Checkout: Check the functionality of adding items to the basket and completing the checkout process.</li>
 </ul>
 
-The system under test used here (www.blazemeter.com) has proven to be really useful for e-commerce type testing, but you of course may have a preferred alternative (generally we'll be covering an e-commerce transactions).
+The system under test used here ([https://www.demoblaze.com]https://www.demoblaze.com)) has proven to be really useful for e-commerce type testing, but you of course may have a preferred alternative (generally we'll be covering an e-commerce transactions).
 
 ### Setting up Cypress and run tests
 
@@ -45,10 +45,10 @@ Once cypress is up and running in the browser, my approach was to follow the Get
 
 #### Setting the baseURL
 
-For UI tests its very useful to not have to explicitly use the url of the system under test (e.g. www.blazemeter.com). We can define the baseUrl in the cypress.config.js in project root. Cypress calls this base url when '/' is used in an E2E test, e.g.
+For UI tests its very useful to not have to explicitly use the url of the system under test (e.g. www.demoblaze.com). We can define the baseUrl in the cypress.config.js in project root. Cypress calls this base url when '/' is used in an E2E test, e.g.
 
 {% highlight js %}
-cy.visit('/') // uses the baseUrl ("www.blazemeter.com in our example) in the cypress.config to open the url.
+cy.visit('/') // uses the baseUrl ("www.demoblaze.com in our example) in the cypress.config to open the url.
 {% endhighlight %}
 
 #### Fixtures
@@ -96,7 +96,7 @@ The [E2Eloginpurchases](https://github.com/dp2020-dev/blazemeter-ecommerce-autom
 
 ![Passing E2E run in Cypress browser view](/images/1_test_passes.png)
 
-In the spec window of Cypress browser we can see our test code has used our configured baseURL and knows '/' should be 'www.blazemeter.com', and uses the imported config to pass in userName & userPassword.
+In the spec window of Cypress browser we can see our test code has used our configured baseURL and knows '/' should be 'www.demoblaze.com', and uses the imported config to pass in userName & userPassword.
 
 ![Passing E2E run in Cypress browser view](/images/2_travel_back.png)
 
@@ -221,3 +221,5 @@ To see the trace, select the test and click trace (at bottom of page).
 This is a really good explanation and summary of Traceviewer, from the official Playwright channel:
 
 <iframe width="427" height="240" src="https://www.youtube.com/embed/lfxjs--9ZQs" title="Viewing Playwright traces" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Summary
