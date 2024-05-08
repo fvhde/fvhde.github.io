@@ -3,14 +3,13 @@ layout: post
 title: Getting hands on with test tools- Cypress versus Playwright
 ---
 
-<i>This post will give some practical advice on installing [Cypress](#-setting-up-cypress-and-run-tests) and [Playwright](#-set-up-playwright-and-run-tests) to create and run some simple UI tests, and [a brief comparison](#-summary) between the two tools.
-
-For reference, I installed both tools on a Macbook Air, and the system under test/code used was Javascript, however the insturctions I link to cover Windows/Linux, other code bases etc.
-</i>
+<i>This post will give some practical advice on installing [Cypress](#-setting-up-cypress-and-run-tests) and [Playwright](#-set-up-playwright-and-run-tests) to create and run some simple UI tests, and [a brief comparison](#-summary) between the two tools.</i>
 
 Alongside Selenium, Cypress and Playwright are currently amongst the most widely used test automation tools. There is a lot of discussion about the pros and cons of each tool, which is the most suitable for a given project etc. but you may want to try these tools out for yourself, this post will help you to get up and running, and run some basic UI tests.
 
 To evaluate these tools myself, I set up [a Git repo](https://github.com/dp2020-dev/blazemeter-ecommerce-automated-tests) to do some basic UI automation, one using Cypress the other Playwright to compare them side by side (I will add Selenium Webdriver soon). If you can set up these tools locally, you will be able to follow and implement the simple test plan outlined below, or alternatively clone the material in the repo itself and run it.
+
+> &#9432; For reference, I installed both tools on a Mac, and the system under test/code used was Javascript, however the instructions I link to cover Windows/Linux, other code bases etc.
 
 ### Test Plan
 
@@ -50,7 +49,7 @@ Once cypress is up and running in the browser, my approach was to follow the Get
 For UI tests its very useful to not have to explicitly use the url of the system under test (e.g. www.demoblaze.com). We can define the baseUrl in the cypress.config.js in project root. Cypress calls this base url when '/' is used in an E2E test, e.g.
 
 {% highlight js %}
-cy.visit('/') // uses the baseUrl ("www.demoblaze.com in our example) in the cypress.config to open the url.
+cy.visit('/') // uses the baseUrl (i.e. www.demoblaze.com in our example) in the cypress.config to open the url.
 {% endhighlight %}
 
 #### Fixtures
@@ -118,7 +117,7 @@ In summary, the Cypress documentation allows us to get up and running pretty qui
 
 ## Set up Playwright and run tests
 
-<i> This is a rough guide to get up and running (follow the links for more detailed instruction) and we'll use the same test plan as mentioned in Test Plan.</i>
+<i> This is a rough guide to get up and running (follow the links for more detailed instruction) and we'll use the same test plan as mentioned in [Test Plan.](#test-plan)</i>
 
 ### Installation
 
@@ -210,7 +209,7 @@ To enable traceviewer, we need the following value in the [config](https://githu
 trace: "on-first-retry
 {% endhighlight js %}
 
-Lets demonstrate how to use traceviewer by change one of our passing tests so it fails. In [login.steps](https://github.com/dp2020-dev/blazemeter-ecommerce-automated-tests/blob/main/playwright/tests/login.spec.ts) , the expected log in message is <b>'Welcome test'</b> (test being the username), changed to <b>'Welcome visitor'</b>:
+Lets demonstrate how to use traceviewer by change one of our passing tests so it fails. In [login.steps](https://github.com/dp2020-dev/blazemeter-ecommerce-automated-tests/blob/main/playwright/tests/login.spec.ts) , the log in message when logging in is <b>'Welcome test'</b> (test being the username), so lets change the expected value in the test to <b>'Welcome visitor'</b>:
 
 {% highlight js %}
 test.describe("Log in tests", () => {
@@ -229,7 +228,7 @@ npx playwright test login.spec.ts:10 --trace on
 {% endhighlight js %}
 This runs traceviewer for the specified test.
 
-![Traceviewer running](/images/Traceviewer1.png/)
+![Traceviewer running](/images/Traceviewer1.png)
 
 Traceviewer saves the test run in a zip file, you can also view it in the browser, for example:
 {% highlight js %}

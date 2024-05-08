@@ -50,7 +50,7 @@ Some of the advantages of using this framework in ChatGPT (or another LLM):
 
 <ul>
 
-<li>Gives a structed plan, with suggested resources.</li>
+<li>Gives a structured plan, with suggested resources.</li>
 <li>Its adaptable- if our focus or timelines change, we can change the study plan.</li>
 <li>Relevant- we can add or remove topics/elements of the plan where necessary (not possible in an ‘off the shelf’ course)</li>
 </ul>
