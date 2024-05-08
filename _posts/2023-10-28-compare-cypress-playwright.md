@@ -3,7 +3,10 @@ layout: post
 title: Getting hands on with test tools- Cypress versus Playwright
 ---
 
-<i>This post will give some practical advice on installing [Cypress](#-setting-up-cypress-and-run-tests) and [Playwright](#-set-up-playwright-and-run-tests) to create and run some simple UI tests, and [a brief comparison](#-summary) between the two tools.</i>
+<i>This post will give some practical advice on installing [Cypress](#-setting-up-cypress-and-run-tests) and [Playwright](#-set-up-playwright-and-run-tests) to create and run some simple UI tests, and [a brief comparison](#-summary) between the two tools.
+
+For reference, I installed both tools on a Macbook Air, and the system under test/code used was Javascript, however the insturctions I link to cover Windows/Linux, other code bases etc.
+</i>
 
 Alongside Selenium, Cypress and Playwright are currently amongst the most widely used test automation tools. There is a lot of discussion about the pros and cons of each tool, which is the most suitable for a given project etc. but you may want to try these tools out for yourself, this post will help you to get up and running, and run some basic UI tests.
 
@@ -26,9 +29,9 @@ The system under test used here ([https://www.demoblaze.com](https://www.demobla
 
 The documentation on installing Cypress itself is pretty user friendly, so rather than repeat material this section will highlight some of the key areas.
 
-![https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements](https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements)
+[https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements](https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements)
 
-Tip: if on running 'npx cypress open' you see a <b> 'Cypress Configuration Error'</b>, ensure you are running cypress from the right folder level, it needs to be in a folder above the cypress.config.js level to avoid any config errors.
+> &#9432; If you see a <b> 'Cypress Configuration Error'</b> when running 'npx cypress open' , ensure you are running cypress from the right folder level, it needs to be in a folder above the cypress.config.js level to avoid any config errors.
 
 Provided the installation has been successful, my prefered approach is to open a command line/terminal in the project folder, and run:
 
@@ -119,9 +122,7 @@ In summary, the Cypress documentation allows us to get up and running pretty qui
 
 ### Installation
 
-<i>Note: you will need to have have NPM installed.</i>
-
-I recommend creating a folder structure via Visual Studio Code, see [Automating End-to-End testing with Playwright and Azure Pipelines](https://techcommunity.microsoft.com/t5/azure-architecture-blog/automating-end-to-end-testing-with-playwright-and-azure/ba-p/3883704).
+I found followed this guide- [Automating End-to-End testing with Playwright and Azure Pipelines](https://techcommunity.microsoft.com/t5/azure-architecture-blog/automating-end-to-end-testing-with-playwright-and-azure/ba-p/3883704), I recommend setting up the folder structure using Visual Studio Code (see step 2 of the linked guide.) You'll also need an NPM package installed as mentioned in the guide.
 
 Once the structure is in place the guide is straightforward, note the step 6 'Execute Playwright Test Script' would not work for me, my solution was change directly (in Terminal) to my playwright folder, the run: npm init playwright@latest
 
@@ -247,7 +248,7 @@ This is a really good explanation and summary of Traceviewer, from the official 
 
 ## Summary - Playwright
 
-I found Playwright relatively straightforward to get up and running quickly, and am impressed by the utility and intuitiveness of codegen and traceviewer. We use a simple example [above](#traceviewer) for traceviewer but it definitely enables quick and effective reporting and debugging, and the codegen tool did help in finding the more awkward page elements which were more difficult in Cypress.
+I found Playwright relatively straightforward to get up and running quickly, and am impressed by the utility and intuitiveness of codegen and traceviewer. We used a simple example [above](#-traceviewer) for traceviewer but it definitely enables quick and effective reporting and debugging, and the codegen tool did help in finding the more awkward page elements which took more time in Cypress.
 
 # Cypress versus Playwright
 
