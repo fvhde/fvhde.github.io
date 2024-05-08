@@ -22,7 +22,7 @@ To compare these test tools, I used the [5W](https://testiotech.com/2024/01/26/5
 <li>Add to Basket and Checkout: Check the functionality of adding items to the basket and completing the checkout process.</li>
 </ul>
 
-The system under test used here ([https://www.demoblaze.com](https://www.demoblaze.com) has proven to be really useful for e-commerce UI testing, but you of course may have a preferred alternative (generally we'll be covering standard e-commerce transactions).
+The system under test used here ([https://www.demoblaze.com](https://www.demoblaze.com)) has proven to be really suited for e-commerce UI testing, but you of course may have a preferred alternative (generally we'll be covering standard e-commerce transactions).
 
 ### Setting up Cypress and run tests
 
