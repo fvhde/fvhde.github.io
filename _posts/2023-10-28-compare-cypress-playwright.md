@@ -201,25 +201,57 @@ If you want to see this applied, see the [auth.setup](https://github.com/dp2020-
 
 ### Traceviewer
 
-TODO: What is traceviewer?
+Traceviewer allows us to review a record of completed tests, similar in a way to Cypress Time travel (which we looked at previously), it reports the test result and allows us to check the outcome of each test step. The benefits here are for reporting itself, and when necessary for debugging, we can review a failed test and see exactly where/why it failed the given test step.
 
-Viewing Playwright traces
+To enable traceviewer, we need the following value in the [config](https://github.com/dp2020-dev/blazemeter-ecommerce-automated-tests/blob/main/playwright/playwright.config.ts) file.
 
-Check traceviewer is set on in config:
+{% highlight js %}
+/_ Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer _/
+trace: "on-first-retry
+{% endhighlight js %}
 
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: "on-first-retry",
+Lets demonstrate how to use traceviewer by change one of our passing tests so it fails. In [login.steps](https://github.com/dp2020-dev/blazemeter-ecommerce-automated-tests/blob/main/playwright/tests/login.spec.ts) , the expected log in message is <b>'Welcome test'</b> (test being the username), changed to <b>'Welcome visitor'</b>:
 
-To trace failing test, go to terminal and input:
+{% highlight js %}
+test.describe("Log in tests", () => {
+test("Successful log", async ({ page }) => {
+const loginPage = new login(page);
+await loginPage.initializeLocators();
+await loginPage.loginFunction("test", "test");
+await expect(
+page.getByRole("link", { name: "Welcome visitor" })
+).toBeVisible();
+{% endhighlight js %}
+
+To run traceviewer, go to the command line/terminal and input:
+{% highlight js %}
 npx playwright test login.spec.ts:10 --trace on
+{% endhighlight js %}
+This runs traceviewer for the specified test.
 
-Where the failing test is in line :10
+![Traceviewer running](/images/traceviewer1.png/)
 
-This will open up a test report in a browser (or open the localhost url), the test report summarised the test results and includes the test steps.
-To see the trace, select the test and click trace (at bottom of page).
+Traceviewer saves the test run in a zip file, you can also view it in the browser, for example:
+{% highlight js %}
+Serving HTML report at http://localhost:57023. Press Ctrl+C to quit.
+{% endhighlight js %}
+
+![Traceviewer test steps and traces](/images/Traceviewer2.png)
+
+The test report shows us the failing test, and clicking trace allows us to see screenshots of each test step. We can see that the message on screen is 'Welcome test' not 'Welcome visitor'.
+
+![Traceviewer screenshots of failed test step](/images/Traceviewer3.png)
 
 This is a really good explanation and summary of Traceviewer, from the official Playwright channel:
 
 <iframe width="427" height="240" src="https://www.youtube.com/embed/lfxjs--9ZQs" title="Viewing Playwright traces" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Summary
+## Summary - Playwright
+
+I found Playwright relatively straightforward to get up and running quickly, and am impressed by the utility and intuitiveness of codegen and traceviewer. We use a simple example [above](#traceviewer) for traceviewer but it definitely enables quick and effective reporting and debugging, and the codegen tool did help in finding the more awkward page elements which were more difficult in Cypress.
+
+# Cypress versus Playwright
+
+I have more experience in using Selenium than these tools, so this was an interesting exercise for me to see how 'lightweight' and quick to implement and use these were in comparison on Selenium. I feel I was able to get Playwright up and running in less time than Cypress, but both are perhaps more user friendly than Selenium.
+
+However, there are a few considerations here, both tools have implicit waits, i.e. a test step will wait fot an element to be loaded before proceeding. This obviously has the advantage of making a test more reliable, but what if this implicit wait is not what the end user expects? Selenium does not have this default wait, it can be added manually but is an interesting consideration.
