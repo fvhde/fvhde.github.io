@@ -3,7 +3,7 @@ layout: post
 title: Getting hands on with test tools- Cypress versus Playwright
 ---
 
-<i>This post will give some practical advice on installing [Cypress](### Setting up Cypress and run tests) and [Playwright](## Set up Playwright and run tests) to create and run some simple UI tests, and [a brief comparison](## Summary) between the two tools.</i>
+<i>This post will give some practical advice on installing [Cypress](#-setting-up-cypress-and-run-tests) and [Playwright](#-set-up-playwright-and-run-tests) to create and run some simple UI tests, and [a brief comparison](#-summary) between the two tools.</i>
 
 Alongside Selenium, Cypress and Playwright are currently amongst the most widely used test automation tools. There is a lot of discussion about the pros and cons of each tool, which is the most suitable for a given project etc. but you may want to try these tools out for yourself, this post will help you to get up and running, and run some basic UI tests.
 
@@ -24,7 +24,7 @@ The system under test used here ([https://www.demoblaze.com]https://www.demoblaz
 
 ### Setting up Cypress and run tests
 
-The documentation on installing Cypress itself is pretty user friendly:
+The documentation on installing Cypress itself is pretty user friendly, so rather than repeat material this section will highlight some of the key areas.
 
 https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements
 
