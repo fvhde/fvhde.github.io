@@ -20,16 +20,15 @@ To compare these test tools, I used the [5W](https://testiotech.com/2024/01/26/5
 <li>Add to Basket and Checkout: Check the functionality of adding items to the basket and completing the checkout process.</li>
 </ul>
 
-The system under test used here ([https://www.demoblaze.com]https://www.demoblaze.com)) has proven to be really useful for e-commerce type testing, but you of course may have a preferred alternative (generally we'll be covering an e-commerce transactions).
+The system under test used here ([https://www.demoblaze.com](https://www.demoblaze.com) has proven to be really useful for e-commerce UI testing, but you of course may have a preferred alternative (generally we'll be covering standard e-commerce transactions).
 
 ### Setting up Cypress and run tests
 
 The documentation on installing Cypress itself is pretty user friendly, so rather than repeat material this section will highlight some of the key areas.
 
-https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements
+![https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements](https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements)
 
-Tip: if on running 'npx cypress open' you see a 'Cypress Configuration Error', ensure you are running cypress from the right folder level, it needs to be in a folder above the cypress.config.js level to avoid any config errors.
-<image: cypress config error>
+Tip: if on running 'npx cypress open' you see a <b> 'Cypress Configuration Error'</b>, ensure you are running cypress from the right folder level, it needs to be in a folder above the cypress.config.js level to avoid any config errors.
 
 Provided the installation has been successful, my prefered approach is to open a command line/terminal in the project folder, and run:
 
@@ -41,7 +40,7 @@ This should open up the Cypress Launchpad, and for this post we'll be concentrat
 
 Once cypress is up and running in the browser, my approach was to follow the Getting Started page to set up the first 'E2E' test, and build on that to start covering the project plan:
 
-[https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test(https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)]
+[https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)
 
 #### Setting the baseURL
 
@@ -55,7 +54,7 @@ cy.visit('/') // uses the baseUrl ("www.demoblaze.com in our example) in the cyp
 
 A lot of the UI tests in this plan use the same user details info for each test, and rather than repeat those strings in each test, we can define a fixture file to store all our log in data, and reuse it in each test.
 
-#### Example:
+##### Example:
 
 In the fixtures file, the userDetails class contains user log in details:
 
@@ -229,7 +228,7 @@ npx playwright test login.spec.ts:10 --trace on
 {% endhighlight js %}
 This runs traceviewer for the specified test.
 
-![Traceviewer running](/images/traceviewer1.png/)
+![Traceviewer running](/images/Traceviewer1.png/)
 
 Traceviewer saves the test run in a zip file, you can also view it in the browser, for example:
 {% highlight js %}
