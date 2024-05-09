@@ -261,6 +261,18 @@ I found Playwright relatively straightforward to get up and running quickly, and
 
 # Cypress versus Playwright
 
-I have more experience in using Selenium than these tools, so this was an interesting exercise for me to see how 'lightweight' and quick to implement and use these were in comparison on Selenium. I feel I was able to get Playwright up and running in less time than Cypress, but both are perhaps more user friendly than Selenium.
+Summary<i> This is a summary of what we've seen in this exercise, and compares to a tool I am more familiar with, Selenium.</i>
 
-However, there are a few considerations here, both tools have implicit waits, i.e. a test step will wait fot an element to be loaded before proceeding. This obviously has the advantage of making a test more reliable, but what if this implicit wait is not what the end user expects? Selenium does not have this default wait, it can be added manually but is an interesting consideration.
+Both Cypress and Playwright are marketed as more 'modern' to use than the older Selenium, and this exercise has demonstrated to me that both Cypress & Playwright are more 'lightweight' to install, intuitive to use and quicker to get up and running and getting good UI test coverage efficiently. [Cypress documentation](https://docs.cypress.io/guides/overview/why-cypress#Our-mission) states it should ideally be used when building a web application, and I can see how its user friendliness would enable devs/testers to efficiently undertake good test driven design.
+
+The debugging and selection tools mentioned in this exercise were a big help, and well designed in my opinion. The impressive built in reporting tool (Traceviewer) in Playwright is something Selenium lacks (at least without a plug in).
+
+However, there are some points to consider when we compare to what is still the mostly widely used alternative, Selenium. Both Cypress and Playwright can be described as 'opinionated' i.e. they are designed in a specific way to work efficiently but therefore have constraints on how they are used. For example, both tools have implicit waits (i.e. a test step waits for an element to load). This is at first a glance an advantage, it allows the page to load and the test to proceed. However, it may mask a performance issue, perhaps the delay in loading is not acceptable for the users. Selenium does not have this implicit wait (and is not opinionated), you can add one to a test but its not implicit.
+
+While the ease of use can appear to be an advantage, perhaps Selenium's flexibility in being able to integrate other third party tools and plug ins means it remains more adaptable, and can be used in a broader range of projects.
+
+Given the age of Selenium, which has been around substantially longer than the other tools, it has a wealth of support and knowledge available online, the others are building that legacy too but you will generally find someone has had the same issue you have in Selenium!
+
+To wrap up, I would recommend anyone weighing up the pros and cons of Cypress versus Playwright (and of course Selenium) to try out the tools as demonstrated in this blog. I found it invaluable to see for myself how Cypress and Playwright really do offer something different, and perhaps more 'modern', but its interesting to note I use Selenium on my day to day work.
+
+> &#9432;In future I will add a 3rd project to my github repo to cover off the [test plan(#-test-plan) for Selenium webdriver.
