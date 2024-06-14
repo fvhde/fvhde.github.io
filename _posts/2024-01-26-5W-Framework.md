@@ -58,7 +58,7 @@ Some of the advantages of using this framework in ChatGPT (or another LLM):
 
 ![Test Talks Wales, 'How to use ChatGPT for your own study plan', January 2024](/images/TTW_January2024.jpg)
 
-As mentioned above I’ve personally used this framework as part of our development and learning in BJSS Test & Assurance, and it’s the basis of a talk I’ve presented at [Test Talks Wales](https://www.meetup.com/test-talks-wales/events/298323939/), and [Ministry of Testing Talks Newcastle](https://www.meetup.com/mot-newcastle/events/298859530/).
+As mentioned above I’ve personally used this framework as part of our development and learning in BJSS Test & Assurance, and it’s the basis of a talk I’ve presented at [Test Talks Wales](https://www.meetup.com/test-talks-wales/events/298323939/), [South West Test](https://www.meetup.com/south-west-test/events/301151914/) and [Ministry of Testing Talks Newcastle](https://www.meetup.com/mot-newcastle/events/298859530/).
 
 ![MoT Newcastle Group, 'How to use ChatGPT for your own study plan', JMarch 2024](/images/MoT_Newcastle.webp)
 
