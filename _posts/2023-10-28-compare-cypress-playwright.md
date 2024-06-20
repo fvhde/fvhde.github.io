@@ -89,7 +89,7 @@ In addition to Cypress documentation, this blog proved useful in understand more
 
 The time travel feature is effectively a record of the changing state of the system under test, which has proven to be invaluable to understand how the website behaves in response to our test inputs, and to debug.
 
-Lets us the demonstrate this by looking at an E2E test that uses our baseUrl set in config, and some of our imported fixture data.
+Lets the demonstrate this by looking at an E2E test that uses our baseUrl set in config, and some of our imported fixture data.
 
 ##### Example
 
