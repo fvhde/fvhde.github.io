@@ -9,7 +9,7 @@ Alongside Selenium, Cypress and Playwright are currently amongst the most widely
 
 To evaluate these tools myself, I set up [a Git repo](https://github.com/dp2020-dev/blazemeter-ecommerce-automated-tests) to do some basic UI automation, one using Cypress the other Playwright to compare them side by side (I will add Selenium Webdriver soon). If you can set up these tools locally, you will be able to follow and implement the simple test plan outlined below, or alternatively clone the material in the repo itself and run it.
 
-> &#9432; For reference, I installed both tools on a Mac, and the system under test/code used was Javascript, however the instructions I link to cover Windows/Linux, other code bases etc.
+> &#9432; For reference, I installed both tools on a Mac, and the system under test/code used was JavaScript. However, the instructions I link to cover Windows/Linux and other code bases.
 
 ### Test Plan
 
@@ -22,7 +22,7 @@ To compare these test tools, I used the [5W](https://testiotech.com/2024/01/26/5
 <li>Add to Basket and Checkout: Check the functionality of adding items to the basket and completing the checkout process.</li>
 </ul>
 
-The system under test used here ([https://www.demoblaze.com](https://www.demoblaze.com)) has proven to be really suited for e-commerce UI testing, but you of course may have a preferred alternative (generally we'll be covering standard e-commerce transactions).
+The system under test used here ([https://www.demoblaze.com](https://www.demoblaze.com)) has proven to be well suited for e-commerce UI testing, but you of course may have a preferred alternative (generally we'll be covering standard e-commerce transactions).
 
 ### Setting up Cypress and run tests
 
@@ -32,7 +32,7 @@ The documentation on installing Cypress itself is pretty user friendly, so rathe
 
 > &#9432; If you see a <b> 'Cypress Configuration Error'</b> when running 'npx cypress open' , ensure you are running cypress from the right folder level, it needs to be in a folder above the cypress.config.js level to avoid any config errors.
 
-Provided the installation has been successful, my prefered approach is to open a command line/terminal in the project folder, and run:
+Provided the installation has been successful, my preferred approach is to open a command line/terminal in the project folder, and run:
 
 {% highlight js %}
 npx cypress open
@@ -46,7 +46,7 @@ Once cypress is up and running in the browser, my approach was to follow the Get
 
 #### Setting the baseURL
 
-For UI tests its very useful to not have to explicitly use the url of the system under test (e.g. www.demoblaze.com). We can define the baseUrl in the cypress.config.js in project root. Cypress calls this base url when '/' is used in an E2E test, e.g.
+For UI tests it's very useful to not have to explicitly use the url of the system under test (e.g. www.demoblaze.com). We can define the baseUrl in the cypress.config.js in project root. Cypress calls this base url when '/' is used in an E2E test, e.g.
 
 {% highlight js %}
 cy.visit('/') // uses the baseUrl (i.e. www.demoblaze.com in our example) in the cypress.config to open the url.
@@ -83,17 +83,17 @@ This class is used in E2E tests, e.g. in E2EloginPurchases test file, we get the
 {% gist dc6175465df73d5c706268bf8add1429 %}
 
 In addition to Cypress documentation, this blog proved useful in understand more about Cypress Fixtures:
-[https://testersdock.com/cypress-fixtures/(https://testersdock.com/cypress-fixtures/)]
+[https://testersdock.com/cypress-fixtures/](https://testersdock.com/cypress-fixtures]
 
 #### Time Travel
 
-The time travel feature is effectively a record of the changing state of the system under test, which has proven to be invaluable to understand how the website behaves in response to our test inputs, and to debug.
+The time travel feature is effectively a record of the changing state of the system under test, which has proven to be invaluable in understanding how the website behaves in response to our test inputs and for debugging.
 
 Lets demonstrate this by looking at an E2E test that uses our baseUrl set in config, and some of our imported fixture data.
 
 ##### Example
 
-The [E2Eloginpurchases](https://github.com/dp2020-dev/blazemeter-ecommerce-automated-tests/blob/main/cypress/e2e/E2EloginPurchases.cy.js) E2E test verifies the log in process works with a valid username/password, and checks a successful log in message appears on screen.
+The [E2EloginPurchases](https://github.com/dp2020-dev/blazemeter-ecommerce-automated-tests/blob/main/cypress/e2e/E2EloginPurchases.cy.js) E2E test verifies the log in process works with a valid username/password, and checks a successful log in message appears on screen.
 
 ![Passing E2E run in Cypress browser view](/images/1_test_passes.png)
 
