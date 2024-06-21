@@ -18,7 +18,6 @@ This is a simple technique that forces us to think through what information and 
 This technique is from an excellent blog by Tina Huang, and is originally based on learning a programming language but is equally applicable to test-related learning:
 
 Apply 5 W framework to get a more relevant response (the example I've used here is to learn Selenium):
-<strong>
 
 <ul>
 
@@ -27,7 +26,7 @@ Apply 5 W framework to get a more relevant response (the example I've used here 
 <li><b> When? </b> Timeline, amount of time available.</li>
 <li><b> Where? </b> Online courses, videos or text based courses.</li>
 <li><b> Why? </b> What's the goal? (e.g. Automated testing using Java/Selenium).</li>
-</strong>
+
 </ul>
 
 Source: [Tina Huang – YouTube: How to learn to code FAST using ChatGPT (it's a game changer seriously)](https://www.youtube.com/watch?v=VznoKyh6AXs&list=LL&index=2&t=377s&themeRefresh=1)
