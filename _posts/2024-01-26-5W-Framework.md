@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Use the 5W framework to get your own personal study plan from ChatGPT, Gemini, Copilot etc. or other LLM/Generative AI tool.
+title: Use the 5W framework to get your own personal study plan from ChatGPT, Gemini, Copilot or other LLM/Generative AI tool.
 ---
 
 <i>Note: this blog post is a summary of a talk I have delivered to test groups.</i>
