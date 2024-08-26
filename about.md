@@ -12,4 +12,4 @@ Feel free to contact me using one of the following vectors:
 * [Mail](mailto:zer0phat@protonmail.ch)
 * [Twitter](https://twitter.com/zer0phat)
 
-Enjoy the reading and Hack the Planet!
+Enjoy your reading!
