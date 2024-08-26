@@ -5,7 +5,7 @@ highlighter:      rouge
 # Setup
 title:            0-PHAT
 tagline:          'Yet another hacking blog'
-description:      '<span style="color:white">Alessandro Grisa</span><br/>Cyber Security Enthusiast'
+description:      '<span style="color:white">Alessandro Grisa</span><br/>Red Teamer & Hardware Hacker'
 url:              zer0phat.github.io
 baseurl:          /
 images:           /public/images
