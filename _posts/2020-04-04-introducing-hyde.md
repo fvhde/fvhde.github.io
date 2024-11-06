@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introducing Hyde
+title: EXPÉRIENCE PROFESSIONNELLE
 ---
 
 Hyde is a brazen two-column [Jekyll](https://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](https://getpoole.com), the Jekyll butler.
