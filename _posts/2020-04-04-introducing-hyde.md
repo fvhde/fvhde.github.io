@@ -1,37 +1,42 @@
 ---
 layout: post
-title: EXPÉRIENCE PROFESSIONNELLE
+title: 
 ---
 
-Hyde is a brazen two-column [Jekyll](https://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](https://getpoole.com), the Jekyll butler.
+## EXPÉRIENCE PROFESSIONNELLE
 
-### Built on Poole
+### Développeur Full Stack
+**Fidesio**  
+*Octobre 2023 - Novembre 2024 | Paris, France*
 
-Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by [@mdo](https://twitter.com/mdo). Poole, and every theme built on it (like Hyde here) includes the following:
+- Participation à la mise en place d'une nouvelle version de l'API Rest avec Symfony
+- Analyse et réponse aux besoins du product owner
+- Mise en place de microservices indépendants et communicants
+- Interventions sur le Front (React et Vue Js)
+- Mise en place d'un chatbot avec Dialog Flow
+- Création et maintien de Functions Cloud en NodeJs sur Google Cloud Function
+- Envoi de notifications avec Google Cloud Message
+- Gestion de fichiers avec Amazon S3
+- CI/CD Gitlab
 
-* Complete Jekyll setup included (layouts, config, [404](/404), [RSS feed](/atom.xml), posts, and [example page](/about))
-* Mobile friendly design and development
-* Easily scalable text and component sizing with `rem` units in the CSS
-* Support for a wide gamut of HTML elements
-* Related posts (time-based, because Jekyll) below each post
-* Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)
+### Développeur Full Stack
+**Ayruu**  
+*Septembre 2019 - Septembre 2023 | Paris, France*
 
-### Hyde features
+- Participation à la mise en place d'une nouvelle version de l'API Rest avec Symfony
+- Analyse et réponse aux besoins du product owner
+- Mise en place de microservices indépendants et communicants
+- Interventions sur le Front (React et Vue Js)
+- Mise en place d'un chatbot avec Dialog Flow
+- Création et maintien de Functions Cloud en NodeJs sur Google Cloud Function
+- Envoi de notifications avec Google Cloud Message
+- Gestion de fichiers avec Amazon S3
+- CI/CD Gitlab
 
-In addition to the features of Poole, Hyde adds the following:
+### Développeur Web PHP Laravel
+**Globus Re**  
+*Octobre 2017 - Septembre 2018 | Ouagadougou, Burkina Faso*
 
-* Sidebar includes support for textual modules and a dynamically generated navigation with active link support
-* Two orientations for content and sidebar, default (left sidebar) and [reverse](https://github.com/poole/lanyon#reverse-layout) (right sidebar), available via `<body>` classes
-* [Eight optional color schemes](https://github.com/poole/hyde#themes), available via `<body>` classes
+- Maintenance et nouvelles fonctionnalités sur le back-office en Laravel
+- Étude du métier et réponse au besoin de calculs de bordereaux de sinistres sur le back-office.
 
-[Head to the readme](https://github.com/poole/hyde#readme) to learn more.
-
-### Browser support
-
-Hyde is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.
-
-### Download
-
-Hyde is developed on and hosted with GitHub. Head to the [GitHub repository](https://github.com/poole/hyde) for downloads, bug reports, and features requests.
-
-Thanks!
