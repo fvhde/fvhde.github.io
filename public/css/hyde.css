@@ -248,3 +248,26 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+/* Contact Info Styling */
+.contact-info {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-item i {
+  margin-right: 0.5rem;
+  color: #888;
+}
+
+.contact-item span {
+  color: #333;
+}
