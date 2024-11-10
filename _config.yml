@@ -31,10 +31,10 @@ description:      '
     <div class="cursus-section"> 
         <h2 style="color: white">Outils</h2> 
         <div class="degree"> 
-            <p class="institution"><strong style="color: white">Techno</strong></p> <p class="details"> PHP(>7.4) . Javascript . Symfony(>4) . Laravel(>7) . ElasticSearch . RabbitMq </p> 
+            <p class="institution"><strong style="color: white">Techno</strong></p> <p class="details"> PHP(>7.4) . SQL . Docker . Javascript . Symfony(>4) . Laravel(>7) . ElasticSearch . RabbitMq </p> 
         </div>
         <div class="degree"> 
-            <p class="institution"><strong style="color: white">Logiciels</strong></p> <p class="details"> PHPStorm . JIRA . Postman </p> 
+            <p class="institution"><strong style="color: white">Logiciels</strong></p> <p class="details"> Gitlab . PHPStorm . JIRA . Postman . Slack . Google Cloud . AWS Cloud . Sentry . Sonarqube . Linux </p> 
         </div> 
     </div>
     '
