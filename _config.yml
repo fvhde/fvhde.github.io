@@ -23,21 +23,21 @@ description:      '
         </div>
     </div>
     <div class="cursus-section"> 
-        <h2 style="color: white">Cursus</h2> 
-        <div class="degree"> 
-            <p class="degree-level">Master Logiciel Sûrs</p> <p class="institution"><strong style="color: white">Université Paris Est Créteil</strong></p> <p class="details"> <i class="fas fa-calendar-alt"></i> Septembre 2018 - Octobre 2020<br> <i class="fas fa-map-marker-alt"></i> Créteil, France </p> 
-        </div>
-        <div class="degree"> 
-            <p class="degree-level">Licence Systèmes d''Informations</p> <p class="institution"><strong style="color: white">École Supérieure d''Informatique</strong></p> <p class="details"> <i class="fas fa-calendar-alt"></i> Septembre 2014 - Octobre 2017<br> <i class="fas fa-map-marker-alt"></i> Bobo Dioulasso, Burkina Faso </p> 
-        </div> 
-    </div>
-    <div class="cursus-section"> 
         <h2 style="color: white">Outils</h2> 
         <div class="degree"> 
             <p class="institution"><strong style="color: white">Techno</strong></p> <p class="details"> PHP(>7.4) . SQL . Docker . Javascript . Symfony(>4) . Laravel(>7) . ElasticSearch . RabbitMq </p> 
         </div>
         <div class="degree"> 
             <p class="institution"><strong style="color: white">Logiciels</strong></p> <p class="details"> Gitlab . PHPStorm . JIRA . Postman . Slack . Google Cloud . AWS Cloud . Sentry . Sonarqube . Linux </p> 
+        </div> 
+    </div>
+    <div class="cursus-section"> 
+        <h2 style="color: white">Cursus</h2> 
+        <div class="degree"> 
+            <p class="degree-level">Master Logiciel Sûrs</p> <p class="institution"><strong style="color: white">Université Paris Est Créteil</strong></p> <p class="details"> <i class="fas fa-calendar-alt"></i> Septembre 2018 - Octobre 2020<br> <i class="fas fa-map-marker-alt"></i> Créteil, France </p> 
+        </div>
+        <div class="degree"> 
+            <p class="degree-level">Licence Systèmes d''Informations</p> <p class="institution"><strong style="color: white">École Supérieure d''Informatique</strong></p> <p class="details"> <i class="fas fa-calendar-alt"></i> Septembre 2014 - Octobre 2017<br> <i class="fas fa-map-marker-alt"></i> Bobo Dioulasso, Burkina Faso </p> 
         </div> 
     </div>
     '
