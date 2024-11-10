@@ -13,7 +13,7 @@ title:
 - Analyse de besoins et estimations de tâches
 - Maintenance d'un BackOffice EasyAdmin
 - Mise en place et documentation d'une API Rest 
-- Composents dynamique Javascript/Twig/Symfony Ux
+- Composents dynamiques Javascript/Twig/Symfony Ux
 - Mise en place d'ElasticSearch, gestion du CRUD des documents.
 - Maintenance de la partier bundle Javascript d'app mobile Median (ex Gonative)
 - CI/CD Gitlab
