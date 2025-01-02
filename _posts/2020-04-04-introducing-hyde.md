@@ -9,14 +9,15 @@ title:
 **Fidesio**  
 *Octobre 2023 - En cours | Paris, France*
 
-- Intervention sur plusieurs projets Symfony en régis.
+- Intervention sur plusieurs projets Symfony/Laravel en régis.
 - Analyse de besoins et estimations de tâches
 - Maintenance d'un BackOffice EasyAdmin
 - Mise en place et documentation d'une API Rest 
-- Composents dynamiques Javascript/Twig/Symfony Ux
+- Composents dynamique Javascript/Twig/Symfony Ux
 - Mise en place d'ElasticSearch, gestion du CRUD des documents.
 - Maintenance de la partier bundle Javascript d'app mobile Median (ex Gonative)
-- CI/CD Gitlab
+- GitFlow et CI/CD Gitlab
+- Tests unitaires/fonctionnels sous PHPUnit
 
 ### Développeur Full Stack
 **Ayruu**  
@@ -32,7 +33,7 @@ title:
 - Envoi de notifications avec Google Cloud Message
 - Gestion de fichiers avec Amazon S3
 - Stack sous Docker, Docker Compose, Mariadb, Elasticsearch, Nginx
-- CI/CD Gitlab
+- GitFlow et CI/CD Gitlab
 - Tests unitaires/fonctionnels sous PHPUnit et suivis de qualité sur SonarQube
 
 ### Développeur Web PHP Laravel
@@ -43,15 +44,15 @@ title:
 - Étude du métier et réponse au besoin de calculs de bordereaux de sinistres sur le back-office.
 - Upload de fichiers excels, calcul, stockage et génération des fichiers excels en sortie.
 
-## Works
-**RESTful filter**  
+## Projets
+**[RayCharles Chrome Extension](https://github.com/fvhde/raycharles-chrome)**
+Une extension Chrome permettant de repliquer la fonction "mots masqués" sur des images spécifiques et sur des visages via reconnaissance faciale (en cours).
 
-https://github.com/fvhde/restful-filter
+**[RESTful Filter](https://github.com/fvhde/restful-filter)**  
+Cette bibliothèque Node JS vise à convertir les paramètres de requête en JSON en requêtes compatibles avec Sequelize.
 
-**CSV to SQL**  
+**[CSV to SQL](https://github.com/fvhde/csv-to-sql)**  
+Un tout petit outil crayant un table dans une base SQLite en partant d'un CSV, offrant ainsi toutes les possibilités de requête SQL.
 
-https://github.com/fvhde/csv-to-sql
-
-**Football scores GraphQL**  
-
-https://github.com/fvhde/football-scores-graphql
+**[Football Scores GraphQL](https://github.com/fvhde/football-scores-graphql)**  
+Une API GraphQL fournissant une interface pour récupérer les scores des matchs de football.
