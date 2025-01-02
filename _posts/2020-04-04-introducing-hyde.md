@@ -49,11 +49,14 @@ title:
 
 Une extension Chrome permettant de repliquer la fonction "mots masqués" sur des images spécifiques et sur des visages via reconnaissance faciale (en cours).
 
-**[RESTful Filter](https://github.com/fvhde/restful-filter)**  
+**[RESTful Filter](https://github.com/fvhde/restful-filter)** 
+
 Cette bibliothèque Node JS vise à convertir les paramètres de requête en JSON en requêtes compatibles avec Sequelize.
 
 **[CSV to SQL](https://github.com/fvhde/csv-to-sql)**  
+
 Un tout petit outil crayant un table dans une base SQLite en partant d'un CSV, offrant ainsi toutes les possibilités de requête SQL.
 
 **[Football Scores GraphQL](https://github.com/fvhde/football-scores-graphql)**  
+
 Une API GraphQL fournissant une interface pour récupérer les scores des matchs de football.
