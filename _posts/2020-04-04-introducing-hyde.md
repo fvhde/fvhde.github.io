@@ -44,8 +44,9 @@ title:
 - Étude du métier et réponse au besoin de calculs de bordereaux de sinistres sur le back-office.
 - Upload de fichiers excels, calcul, stockage et génération des fichiers excels en sortie.
 
-## Projets
+## PROJETS
 **[RayCharles Chrome Extension](https://github.com/fvhde/raycharles-chrome)**
+
 Une extension Chrome permettant de repliquer la fonction "mots masqués" sur des images spécifiques et sur des visages via reconnaissance faciale (en cours).
 
 **[RESTful Filter](https://github.com/fvhde/restful-filter)**  
