@@ -15,7 +15,7 @@ title:
 - Mise en place et documentation d'une API Rest 
 - Composents dynamique Javascript/Twig/Symfony Ux
 - Mise en place d'ElasticSearch, gestion du CRUD des documents.
-- Maintenance de la partier bundle Javascript d'app mobile Median (ex Gonative)
+- Applications mobiles iOS et Android via Median (ex Gonative)
 - GitFlow et CI/CD Gitlab
 - Tests unitaires/fonctionnels sous PHPUnit
 
@@ -28,6 +28,7 @@ title:
 - Mise en place de microservices indépendants et communicants
 - Gestion asynchrone avec RabbitMq et migration vers Symfony Messenger
 - Interventions sur le Front (React et Vue Js)
+- Applications mobiles iOS et Android via Quasar
 - Mise en place d'un chatbot avec Dialog Flow
 - Création et maintien de Functions Cloud en NodeJs sur Google Cloud Function
 - Envoi de notifications avec Google Cloud Message
